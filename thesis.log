@@ -1,0 +1,457 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.12.29)  19 DEC 2012 21:35
+entering extended mode
+**G:/Papers*2013/PhDThesis/thesis.tex
+("G:/Papers 2013/PhDThesis/thesis.tex"
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("G:\Papers 2013\PhDThesis\otagothesis.sty"
+Package: otagothesis 1998/02/03 v0.99 Otago's A4 based page layout
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(C:\Users\nabeel.OUCS1289\AppData\Roaming\MiKTeX\2.8\tex\latex\cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+
+
+Package natbib Warning: The `cite' package should not be used
+(natbib)                with natbib. Use option `sort' instead.
+
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+LaTeX Info: Redefining \citenum on input line 708.
+\c@NAT@ctr=\count89
+)
+(C:\Users\nabeel.OUCS1289\AppData\Roaming\MiKTeX\2.8\tex\latex\caption\caption.
+sty
+Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+
+(C:\Users\nabeel.OUCS1289\AppData\Roaming\MiKTeX\2.8\tex\latex\caption\caption3
+.sty
+Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@indent=\dimen108
+\caption@parindent=\dimen109
+\caption@hangindent=\dimen110
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used on input line 1084.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
+p \sbox \@tempboxa {#1: #2}\ifdim \wd \@tempboxa > 0.8\hsize \leftskip = 0.1\hs
+ize \rightskip = 0.1\hsize #1: #2\par \else \global \@minipagefalse \hb@xt@ \hs
+ize {\hfil \box \@tempboxa \hfil }\fi \vskip \belowcaptionskip .
+\c@ContinuedFloat=\count90
+)
+(C:\Users\nabeel.OUCS1289\AppData\Roaming\MiKTeX\2.8\tex\latex\caption\subcapti
+on.sty
+Package: subcaption 2008/08/31 v1.0b Adding subcaptions (AR)
+\c@subfigure=\count91
+\c@subtable=\count92
+) ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count93
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks17
+\c@algorithm=\count94
+)
+(C:\Users\nabeel.OUCS1289\AppData\Roaming\MiKTeX\2.8\tex\latex\moreverb\morever
+b.sty
+Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
+ ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks18
+\verbatim@line=\toks19
+\verbatim@in@stream=\read1
+)
+\tab@position=\count95
+\tab@size=\count96
+\listing@line=\count97
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\algorithms\algorithmic.sty"
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count98
+\c@ALC@line=\count99
+\c@ALC@rem=\count100
+\c@ALC@depth=\count101
+\ALC@tlm=\skip45
+\algorithmicindent=\skip46
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\framed\framed.sty"
+Package: framed 2007/10/04 v 0.95: framed or shaded text with page breaks
+\fb@frw=\dimen111
+\fb@frh=\dimen112
+\FrameRule=\dimen113
+\FrameSep=\dimen114
+)
+("G:\Papers 2013\PhDThesis\thesis.aux" ("G:\Papers 2013\PhDThesis\intro.aux")
+("G:\Papers 2013\PhDThesis\navtools.aux"
+
+LaTeX Warning: Label `fig:dog' multiply defined.
+
+) ("G:\Papers 2013\PhDThesis\literature.aux")
+("G:\Papers 2013\PhDThesis\conclusion.aux"))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count102
+\scratchdimen=\dimen115
+\scratchbox=\box28
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count105
+\MPscratchDim=\dimen116
+\MPnumerator=\count106
+\everyMPtoPDFconversion=\toks21
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ <logo.pdf, id=1, 139.52126pt x 201.75375pt>
+File: logo.pdf Graphic file (type pdf)
+ <use logo.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+
+ []
+
+[1
+
+{C:/Users/nabeel.OUCS1289/AppData/Local/MiKTeX/2.8/pdftex/config/pdftex.map} <G
+:/Papers 2013/PhDThesis/logo.pdf>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 87.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 87.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 87.
+ [1
+
+] ("G:\Papers 2013\PhDThesis\abstract.tex") [2
+
+] ("G:\Papers 2013\PhDThesis\acknowledgements.tex") [3
+
+]
+("G:\Papers 2013\PhDThesis\thesis.toc" [4
+
+])
+\tf@toc=\write3
+ [5]
+("G:\Papers 2013\PhDThesis\thesis.lot")
+\tf@lot=\write4
+ [6
+
+]
+("G:\Papers 2013\PhDThesis\thesis.lof")
+\tf@lof=\write5
+ [7
+
+] ("G:\Papers 2013\PhDThesis\intro.tex"
+Chapter 1.
+[1
+
+
+
+] <images/indoor.png, id=39, 642.4pt x 481.8pt>
+File: images/indoor.png Graphic file (type png)
+ <use images/indoor.png>
+<images/indoor1.png, id=40, 642.4pt x 481.8pt>
+File: images/indoor1.png Graphic file (type png)
+ <use images/indoor1.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2]
+
+Package natbib Warning: Citation `paul08' on page 3 undefined on input line 163
+.
+
+[3 <G:/Papers 2013/PhDThesis/images/indoor.png (PNG copy)> <G:/Papers 2013/PhDT
+hesis/images/indoor1.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 218.
+
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 218.
+ [4]
+Overfull \hbox (1.85152pt too wide) in paragraph at lines 326--330
+\OT1/cmr/m/n/12 nor-mal-ized term fre-quency in-verse doc-u-ment fre-quency ($\
+OML/cmm/m/it/12 ntfidf$\OT1/cmr/m/n/12 ) and Okapi $\OML/cmm/m/it/12 BM\OT1/cmr
+/m/n/12 25$
+ []
+
+[5]
+Overfull \hbox (2.0138pt too wide) in paragraph at lines 341--346
+[]\OT1/cmr/m/n/12 We com-pare dif-fer-ent ver-i-fi-ca-tion meth-ods with our pr
+o-posed ho-mog-ra-phy method
+ []
+
+[6] <images/cr_1.png, id=61, 1027.84pt x 770.88pt>
+File: images/cr_1.png Graphic file (type png)
+ <use images/cr_1.png>
+<images/cr_2.png, id=62, 1027.84pt x 770.88pt>
+File: images/cr_2.png Graphic file (type png)
+ <use images/cr_2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/crowd.png, id=63, 1027.84pt x 682.55pt>
+File: images/crowd.png Graphic file (type png)
+ <use images/crowd.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package natbib Warning: Citation `rasiwasia08' on page 7 undefined on input lin
+e 487.
+
+[7] [8 <G:/Papers 2013/PhDThesis/images/cr_1.png (PNG copy)> <G:/Papers 2013/Ph
+DThesis/images/cr_2.png (PNG copy)> <G:/Papers 2013/PhDThesis/images/crowd.png 
+(PNG copy)>] [9]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+) [10] ("G:\Papers 2013\PhDThesis\navtools.tex"
+Chapter 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 41.
+[11
+
+
+
+] [12] [13] [14] <Images/whitecane.png, id=92, 376.40625pt x 565.36218pt>
+File: Images/whitecane.png Graphic file (type png)
+
+<use Images/whitecane.png>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 303.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15] <Images/guidedog.jpg, id=96, 289.08pt x 401.5pt>
+File: Images/guidedog.jpg Graphic file (type jpg)
+
+<use Images/guidedog.jpg>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16 <G:/Papers 2013/PhDThesis/Images/whitecane.png (PNG copy)>]
+<Images/miniguide.jpg, id=100, 1123.19624pt x 933.4875pt>
+File: Images/miniguide.jpg Graphic file (type jpg)
+
+<use Images/miniguide.jpg>
+<Images/soundpost.png, id=101, 306.39468pt x 117.43875pt>
+File: Images/soundpost.png Graphic file (type png)
+
+<use Images/soundpost.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17 <G:/Papers 2013/PhDThesis/Images/guidedog.jpg> <G:/Papers 2013/PhDThesis/Im
+ages/miniguide.jpg>] [18 <G:/Papers 2013/PhDThesis/Images/soundpost.png (PNG co
+py)>] [19] <Images/envs.png, id=112, 99.37125pt x 139.27031pt>
+File: Images/envs.png Graphic file (type png)
+
+<use Images/envs.png> [20 <G:/Papers 2013/PhDThesis/Images/envs.png (PNG copy)>
+]) [21] ("G:\Papers 2013\PhDThesis\literature.tex"
+Chapter 3.
+[22
+
+
+
+] [23]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+
+
+Package natbib Warning: Citation `shen06' on page 24 undefined on input line 22
+2.
+
+[24] [25] [26] [27] [28]
+Overfull \hbox (0.56937pt too wide) in paragraph at lines 604--616
+[]\OT1/cmr/m/n/12 WhereNet po-si-tion-ing sys-tem of-fers in-door and out-door 
+real-time po-si-tion-ing ( Wbe-
+ []
+
+[29]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+ [30] [31] [32] [33]
+
+Package natbib Warning: Citation `bay06' on page 34 undefined on input line 909
+.
+
+[34]
+Missing character: There is no Ô in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Å in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+ [35]) [36] ("G:\Papers 2013\PhDThesis\conclusion.tex"
+Chapter 4.
+) [37
+
+
+
+] ("G:\Papers 2013\PhDThesis\thesis.bbl" [38
+
+
+
+] [39] [40] [41] [42] [43]
+[44] [45])
+
+Package natbib Warning: There were undefined citations.
+
+[46] ("G:\Papers 2013\PhDThesis\thesis.aux" ("G:\Papers 2013\PhDThesis\intro.au
+x") ("G:\Papers 2013\PhDThesis\navtools.aux")
+("G:\Papers 2013\PhDThesis\literature.aux")
+("G:\Papers 2013\PhDThesis\conclusion.aux"))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3319 strings out of 495285
+ 49766 string characters out of 3179847
+ 112703 words of memory out of 3000000
+ 6458 multiletter control sequences out of 15000+200000
+ 10398 words of font info for 37 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 36i,8n,38p,292b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
+:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
+ Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (
+x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)
+/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on thesis.pdf (54 pages, 4626430 bytes).
+PDF statistics:
+ 232 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+

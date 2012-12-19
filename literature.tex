@@ -1,0 +1,1214 @@
+\chapter{Image based localisation}
+\label{chap:visualnavigate}
+%
+%
+\vspace{-10.0em}
+\begin{abstract}
+The previous chapter mentioned some navigation tools 
+which assist the navigation. This chapter moves to a 
+next level and reviews works which 
+offer visual navigation for robotics or 
+visually impaired people. The localisation based 
+on different technologies is reviewed to understand the 
+importance of vision based localisation. 
+Finally, we present some good research works 
+which use robust computer vision techniques to 
+perform scene matching in indoor and outdoor 
+environments. 
+\end{abstract}
+
+
+
+\section{Visual Navigation}
+The navigation based on vision (images or videos) 
+is referred as "walk through problem". 
+The vision sensor seems to be the best choice 
+for navigation if we consider its nice features 
+like low price, low power, non contact and 
+high potential information contents. 
+However, its really hard to extract useful 
+and reliable information from the image feeds 
+to base mobility decisions.
+The visual navigation focuses on guidance with the 
+goal of automatically reproducing the tasks performed
+by humans without any visual impairment. The important tasks 
+are to detect the current location, plan the route 
+and then guide the blind person safely 
+while avoiding the possible obstacles on the way. 
+ Francisco \emph{et al.} provides a very good survey 
+on visual navigation for mobile robots 
+and mention key research contributions 
+which are made from nineties till 2008 (~\citet{bonin-font08}).
+The visual navigation systems are
+divided into two main categories:
+% (1)
+%map-based systems which need some 
+%representation of the environment in 
+%the form of a map before the start 
+%of navigation, and (2) mapless systems 
+%which do not need any map aof the environment. 
+%In mapless systems, navigation is 
+%determined by observing and extracting
+%useful features in the environment 
+%based on on board sensors.
+
+
+
+\subsection{Map based systems}
+\label{sec:mapbasedsystem}
+
+Map based systems need 
+some representation of the environment 
+built before the start of navigation process. 
+There are two systems mainly 
+(1) systems which use an existing 
+map of the environment 
+usually referred as \emph{map-using}, 
+and (2) systems that 
+build the map of the environment themselves 
+usually 
+referred as \emph{mup-building}. 
+The navigation starts only 
+after the environment representation or a 
+map is available.
+
+%Map building and self-localization in the navigation environment 
+%are two functionalities that most systems tend to incorporate. 
+%In standard map-building approaches, 
+%the localization in the environment can be computed
+%by some other techniques while in pure 
+%localization approaches, the map of the
+%environment is presumably available. 
+For a true autonomous visual navigation, the 
+system needs to do automatic exploration, 
+localisation and mapping of the environment 
+via techniques known as Simultaneous localization and mapping (SLAM).
+SLAM basically involves the simultaneous 
+estimation of a map and the robot pose concurrently.
+%Normally 
+%systems based on SLAM solve each of the two 
+%problems independently i.e. a robot can trivially 
+%estimate its position given a complete map of its environment 
+%and it can also construct a map from sensor data if i
+%ts position is accurately known. 
+Recently, cameras have been used as the sole sensor
+to yield SLAM based on vision i.e. visual SLAM (~\citet{chen07, davison07,silveira08}).
+A standard scheme to visual SLAM consists 
+of first extracting a sufficiently
+large set of features and robustly matching
+them between successive frames. These corresponding features
+are used for estimating the camera pose
+and scene structure. In this section, 
+we discuss some well known SLAM systems 
+which make use of a map 
+with a particular focus on indoor buildings. 
+%with a focus on indoor buildings.
+
+Davison presented MonoSLAM which 
+is based on monocular vision and is one of the most 
+successful schemes for a single camera (~\citet{davison03}). 
+Landmark positions and camera pose 
+are estimated and refined directly from 
+observations in the image using an 
+Extended Kalman Filter (EKF).
+The camera can be positioned accurately 
+for extended periods provided that sufficient landmarks 
+are tracked. However, the positioning is limited to 
+small scale environments with 100 
+landmarks in total. Clement \emph{et al.} 
+(~\citet{clemente07}) 
+extended MonoSLAM to deal with 
+larger environments by using 
+the submaps framework proposed by (~\citet{estrada05}).
+MonoSlam is used on small scale and new map is started 
+once the number of landmarks grows beyond
+some limit. The local submaps are combined into 
+an accurate global map by opimising transformations 
+between submaps. The system is able to close 
+250m loop with an accurate global map.
+
+
+
+Sim \emph{et al.} presented a system which maps 
+a large and complex environment in real time using 
+a pair of stereo cameras (~\citet{sim06}). 
+The main contribution of the work 
+is a fully automatic mapping system which operates 
+on-line and consistently produces accurate maps of 
+large scale environments. The system uses a hybrid approach 
+consisting of 3D landmark extraction based on 
+SIFT features (~\citet{lowe04}) for 
+image localisation and occupancy grid 
+to obtain a map for a safe navigation. 
+The occupancy grid represents
+the environment as an evenly spaced 
+field of binary random variables each 
+representing the presence of an obstacle 
+at that location in the environment.
+The occupancy grid offers a reliable 
+spatial representation of the 
+world for a safe navigation. 
+The proposed system is deployed on 
+a robot and it does well in a laboratory 
+environment with of two rooms during the testing. 
+
+
+%A topological map is a graph based representation 
+%of the environment and is often used for navigation. 
+%Each node corresponds to a place in the environment 
+%and is associated with actions 
+%such as turning, crossing a door etc.
+Topological maps are graph based representation 
+of the environment and are 
+parsimonious representation because they are 
+simple and easy to scale. Winters \emph{et al.} (~\citet{winters99} 
+proposed a system for robot which 
+uses omnidirectional camera images to generate a 
+topological map of the indoor structured 
+environment during a training phase.
+The links in the graph are sequence of images 
+belonging to a place (e.g. corridor) and nodes 
+represent specific places associated with actions 
+such as turning, crossing a door etc. 
+The image set is represented by %compressed by %compressed by Principal Component Analysis to obtain 
+a low dimensional eigenspace and robot determines
+its position by projecting the current image into eigenspace 
+during movement. After position estimation, 
+the robot uses ground plane images to extract 
+corridor guidelines to control its trajectory. 
+The system does well in corridors of 
+Institute for Systems and Robotics, Portugal (ISR) 
+\footnote{\url{http://welcome.isr.ist.utl.pt/home/}}.
+
+
+Kidono \emph{at al.} developed a system 
+which needs training from a human to build a map (~\citet{kidono02}). 
+As user guides a mobile robot to a
+destination by remote control, 
+the robot constructs a 3D model on line incrementally 
+frame by frame from stereo images. 
+For autonomous movement, the robot 
+utilizes the map and past experience on observation 
+to safely navigate from the starting point 
+to the goal point.  The robot is navigated through an 
+indoor room with different obstacles and did well.
+%. During this movement, the robot observes the surrounding
+%environment to make a map. Once the map is generated, the robot computes and follows
+%the shortest path to the destination autonomously. To
+%With the map, 
+%the robot can can repeat the sane route from 
+%starting point to the goal point via tracking the features 
+%and finding the closest safe path. 
+
+
+
+%Anther important map building robot applications are 
+%the museum guiding robots which need to be autonomous 
+%to recognize people, guide them through different environments 
+%and also avoid obstacles. 
+Thrun \emph{et al.} developed a museum guiding robot 
+MINERVA\footnote{\url{http://www.cs.cmu.edu/~minerva/}} that uses laser scans, camera images and 
+odometry readings to to build map of the environment for 
+the navigation (~\citet{thrun99}). The robot is first navigated 
+via joystick in the museum to generate 
+occupancy and ceiling texture maps. The occupancy 
+grid ensure safe navigation and texture maps are used 
+for localisation in case of a huge crowd because 
+frontal images do not offer sufficient information for 
+feature based tracking. The robot remained operational for two weeks 
+at Smithsonian’s National Museum of American History 
+and successfully interacted with thousands of people.
+Shen \emph{et al.} proposed ATLAS, a more advanced 
+museum guiding robot (~\citet{shen06}). 
+The laser data and images are used 
+to match the map data of the environment for localisation. 
+A visual appearance based algorithm is than used for normal
+topological navigation. In visual appearance algorithms, 
+the current image is compared with stored templates or models 
+for the recognition. ATLAS is tested in the foyer of London County
+Hall for 03 months. The robot can (1) detect the nearby visitors 
+and interact with them via voice and a touching screen, (2)
+uses a human face detection to approach to new visitors
+and (3) can detect the battery level and
+charge itself automatically. This makes ATLAS possible to
+run continuously in a museum environment.
+
+
+%The approaches discussed so far use global 
+%description of the environment obtained either 
+%automatically or by a human guided stage before the start of navigation. 
+Some navigation systems support on line construction of a local 
+occupancy grid which is the portion of 
+the environment surrounding the robot.
+This local information is used for a 
+subsequent map construction frame by frame 
+for on line safe navigation. 
+Gartshore \emph{et al.}
+presented a framework for map building 
+based on online images captured by a single camera
+ (~\citet{gartshore02}). 
+%The work focuses on locating the 
+%position of features in 
+%the environment during the map building.
+The main contribution of the work 
+is combination of occupancy 
+grid and visual data from a single camera.
+The system uses feature detector 
+algorithm to identify the object boundaries 
+based on features in occupancy grids 
+from the current frame. While positioning 
+module computes robot position using 
+odometry data and detected features. 
+The color or gradient from 
+features from past frames are used 
+to further verify the object presence 
+at a specific location. 
+%The systems computes the 
+%probabilities of finding the objects 
+%at every location. The edge features are used to detect 
+%object boundaries for the current frame.
+%The positioning module of the system computes the 
+%position of robot via odometry data and 
+%with extracted features. The color or gradient 
+%from edges from past frames help to verify the 
+%object presence at a certain location. 
+The experiments were conducted in indoor environment 
+and robot was able to navigate safely while 
+avoiding the obstacles. 
+
+Botterril \emph{et al.} presented a BoWSLAM scheme 
+which enables real-time navigation of robots 
+in dynamic environments using a single camera alone 
+(~\citet{botteril10}).
+The robot can position itself in real-time while exploring 
+a previously unknown environment. 
+The system works by representing 
+every frame as a Bag of Words (BoW). BoW 
+representation is then used to select 
+multiple nearby frames to compute relative positions 
+and latest frame is positioned relative to each of these 
+frames. A subset of these multiple position hypotheses 
+with minimum gross errors is selected 
+to accurately position the robot in a global
+map. The proposed system allows robot navigation in 
+challenging dynamic and self-similar environments.
+
+
+\subsection{Mapless systems}
+These systems refer to those techniques which do not need 
+any knowledge of the environment but they navigate 
+as they perceive the environment. These techniques 
+often grab video frames to produce enough information 
+about the unknown environment for a safe navigation. 
+
+Optical flow is one of the technique commonly used 
+for mapless systems. Taludker \emph{et al.} presented 
+a novel optical flow based solution 
+for robots to detect the presence of dynamic objects 
+in the camera field of view during navigation (~\citet{talukder04}).
+The algorithm assumes that moving objects cause discontinuity 
+in optical flow orientation and changes its magnitude with respect 
+to the background pixels orientation and magnitude.
+The system is initially tested with single camera and 
+later on with stereo cameras to extract the depth information.
+
+
+Green \emph{et al.} presented a Closed Quarter Aerial Robot (CQAR) 
+whose navigation is controlled 
+by an insect inspired optical flow based system  (~\citet{green03}) . 
+The robot can fly into buildings, take off and land 
+based on optical flow computed from the images 
+of the environment. The minimum flying speed of 
+CQAR is 2 m/s and it needs to turn
+%, the turning radius is about 2.5 m and it needs 
+5 meters before to avoid an obstacle. 
+
+ Zhou \emph{et al.} used appearance based strategy 
+for mapless navigation  (~\citet{zhou03}). Such strategies 
+has two phases (1) first in a pre-training phase,
+the images or prominent features from the environment 
+are observed and stored as model templates. 
+These models are labeled with a certain location 
+information, % or with an associated control steering command, 
+and (2) in the navigation stage, the
+robot matches the current image with the stored templates 
+to recognize the environment and self-localize. 
+Zhou \emph{et al.} 
+utilized color, gradient, edge density and texture 
+histograms to describe the appearance of pre-recorded 
+indoor images. The navigation is performed by matching 
+the multidimensional histogram of current image with 
+the stored templates. The use of histograms save 
+computation resources and are simple to use.
+The main problems with appearance based strategies are
+to identify the ways to represent the environment 
+and perform on-line matching. 
+
+The image qualitative characteristics and their interpretation 
+are often used by visual techniques to navigate 
+and avoid obstacles. The navigation systems 
+based on qualitative information avoid as
+much as possible the obstacles in the environment. 
+%The are two types of reactive visual obstacle 
+%avoidance systems (1) model-based systems, 
+%which need pre-defined models of known objects, and 
+%(2) sensor-based systems, which process 
+%every online sensor information to determine the 
+%free space and obstacles. 
+Fasola \emph{et al.} proposed to use 
+image color segmentation techniques 
+to detect the possible objects from frames 
+followed by classification of opponent robots 
+via gray scale umage processing (~\citet{fasola06}). 
+The integral images which were introduced for real time 
+face detection have been used for a robust robot classification 
+(~\citet{viola01}). The proposed system is developed
+with the annual RoboCup Competition in mind 
+where teams of Sony AIBO 4-Legged robots compete
+in the game of soccer. From a set of 327 test
+images, the system was able to achieve a 97\% 
+classification accuracy yielding only one false positive.
+
+
+The techniques for tracking moving elements 
+in a video sequence have become robust enough and useful 
+for navigation. Such techniques divide a tracking task into two sub-tasks
+(1) motion detection, which refers to the identification 
+of most likely region in next frame to find the feature, 
+and (2) feature matching, by which the 
+feature tracked is identified within the determined region (~\citet{trucco06}).
+Such techniques do not handle the obstacle avoidance.
+SIFT features (~\citet{lowe04}) are the popular features 
+for the navigation so far. During the navigation, the 
+SIFT features are observed from different viewpoints, angles, distances 
+and with different illumination changes. The detected features serve as 
+appropriate landmarks to be trace over time for navigation, 
+global localisation and a robust vision based SLAM performance 
+(~\citet{se01, se05}).
+
+Saeedi used stereo vision in a novel navigation strategy applicable to unstructured
+indoor/outdoor environments (~\citet{saeedi06}). 
+The main emphasis of this work is to estimate the robot motion
+independently from any prior scene or landmark knowledge. 
+The system uses a new, faster and more
+robust corner detector and detected features are 3D positioned.
+The 3D positions of scene features and the robot 
+are refined by a Kalman filtering over time. The results 
+indicate a good tracking and localization performance covering 
+outdoor environment of 5 cm by the system.
+
+\section{Localisation}
+\label{sec:localisation}
+In the previous section, we have reviewed 
+some key contributions in area of visual navigation 
+for robotics. However, same techniques can be utilized 
+for blind people by replacing the control signals 
+with appropriate voice messages.
+ 
+However, the focus of our work is the scene localisation 
+in indoor environment only and not the navigation. 
+Technologies other than vision have been used 
+for indoor positioning, such as infrared,
+ultrasonic etc. It is important to briefly review these techniques 
+to understand the corresponding limitations to 
+identify the benefits of vision based localisation. 
+In this section, we briefly discuss indoor positioning based on 
+different techniques for the analysis (~\citet{indoorsurvey11, gu09}). 
+
+
+\subsection{Infrared}
+\label{sec:infrared}
+Infrared (IR) positioning technology needs infra-red 
+emitters and measures the position of the object
+according to the receiving time of infrared signals. 
+Want \emph{et al.} developed Active Badge system, one
+of the first successful IR based indoor positioning system at
+AT\&T Cambridge in 1990s  (~\citet{want92, harter02, abs08}). The person needs 
+to carry an active badge and system provides room level 
+indoor localisation with active badges.
+An active badge transmits a globally unique IR signal every 15
+seconds. In each located place, one or more sensors are fixed 
+and detect the IR signal sent by
+an active badge. 
+The position of an active badge can be
+specified by the information from these sensors 
+and forwards the location information
+of the tracked active badges to a central server.
+The price of active badges and networked sensors
+are cheap but the cables connecting the 
+sensors raise the cost of the
+Active Badge system. 
+%Moreover, the effective transmission 
+%range of this positioning technology is
+%only a few meters since the poor penetration of infrared.
+%The system may not work well in glass structure buildings as 
+%it is influenced by sunlight and fluorescent.
+
+OPTOTRAK system is designed for positioning in 
+congested shops and workspaces ~\cite{opo08}. The OPTOTRAK
+uses a system of three cameras as a linear array to track 3-
+D positions of numerous markers on an object. 
+The markers mounted on different parts of a
+tracked object emits IR light which is detected by the camera
+of the system to estimate the location of them via triangulation 
+technique. The system offers a high accuracy of 0.1 mm to 0.5 mm
+with 95\% success probability. A disadvantage of OPTOTAK system
+is the line-of-sight requirement between the objects and the
+tracking system. However this can be partially solved 
+by using a large number of IR markers at the expense of cost. 
+
+IR based systems provide a precise position estimation 
+%IR emitters are small, light-weight and the system 
+%architectures are simple leading to a low 
+%installation and maintenance cost. However, there 
+%are still some disadvantages with these systems. 
+However, IR signals have some limitations for sensing location, 
+for example, interference from florescent light and sunlight. 
+This problem can be solved by using optical and electronic filters 
+but it raises the cost of the positioning system. 
+Although, the IR emitters are cheap but whole system using camera array, 
+transmitters, IR device and wire connectivity for each isolated 
+place increases the cost of system.
+connected via wires is expensive when used in large areas. 
+%comparing to the coverage
+%area. There should be a transmitter or receiver in every
+%measured place such as a room equipped with at least one IR
+%device to locate whether the target persons or devices are in
+%the room or not. These transmitters or receivers fixed in each
+%place are connected using special wire. In addition, when an
+IR device taken by a person is covered by his/her clothes,
+the system fails to work since the IR wave can not penetrate
+opaque materials.
+
+% developed ActiveBadge, 
+%one of the best indoor positioning 
+%working system so far. The system got refined 
+%with time. Each user needs to carry small infrared
+%marking equipment. The marking equipment sends a globally unique identification
+%code every 15 seconds and infrared sensors 
+%fixed in the building collect the data
+%then transmit to a central server which accomplishes the positioning process. 
+%ActiveBadge is low cost and easy to use, but it is 
+%vulnerable to the impact of fluorescent and
+%sunlight. Moreover, the effective transmission 
+%range of this positioning technology is
+%only a few meters since the poor penetration of infrared.
+%The system may not work well in glass structure buildings 
+%due to sunlight coming through the windows. The associated 
+%cost is also higher. The largest single system is at Cambridge University Computer Laboratory, 
+%where over 200 badges and 300 sensors are in daily use.
+
+\subsection{Ultrasonic}
+\label{sec:ultrasonic}
+Using ultrasound signal is another way to measure the position. 
+Ultrasound signals are used by bats to navigate
+in the night which inspire people to design a similar navigating
+system. Ultrasonic positioning technology uses mainly reflective distance method to
+determine the location of the object. 
+
+Active Bat system is a well known 
+ultrasonic indoor positioning system researched by AT\&T Labs (~\citet{ultrasound04}).
+It is a low-power, wireless indoor location system accurate up to 3 cm. 
+It relies on multiple ultrasonic receivers embedded in the ceiling 
+and measures time-of-flight to them. It works by finding 
+the distance to minimum of three reference 
+nodes and then using multilateration technique to find the exact position. 
+The performance of the system is influenced
+by the reflection and obstacles between tags and receivers,
+which degrades the system accuracy. The scalability of the system 
+is affected due to deployment of 
+a large number of sensors on the ceiling. 
+The receivers also need to be accurately placed,
+which results in complex and costly installation.
+
+Cricket system is another location system which offers 
+efficient performance and low cost (~\cite{priyantha00,priyantha05}). 
+The cricket system uses time of arrival measuring method
+and triangulation location technique to locate a target. The
+system includes ultrasound emitters as infrastructure
+attached on the walls or ceilings at known positions, and a
+receiver mounted on each object to be located.
+The cost of the whole system is low and it can 
+provide a position estimation accuracy of 10 cm.
+The receivers in the cricket system consume more power 
+and its power supply needs to be efficiently designed 
+to avoid frequent charging.
+The Sonitor ultrasound IPS is an indoor tracking
+and positioning solution provided by Sonitor Technologies
+Inc (~\citet{sonitor08}). The Sonitor system can locate and track people and
+devices in real-time and offer very good room level accuracy. 
+
+%Ultrasound positioning systems give a kind of inexpensive positioning
+%solutions. Usually the ultrasound signals used to locate
+%objects need to be combined with RF signals, which perform
+%synchronization and coordination in the system. These ultrasound
+%positioning systems increase the system coverage area.
+%However, ultrasound-based positioning systems have lower
+%measurement accuracy (several centimeters) than IR-based
+%systems (several millimeters). These ultrasound positioning
+%systems suffer from reflected ultrasound signals and other
+%noise sources such as jangling metal objects, crisp packets,
+%etc.
+ Usually the ultrasound signals used to locate
+objects need to be combined with RF signals, which perform
+synchronization and coordination in the system. These ultrasound
+positioning systems increase the system coverage area.
+However, Ultrasonic positioning system requires 
+large-scale layout with many of receiver hardware 
+leading to a overall higher cost. 
+The positioning result is very sensitive with the
+environment and suffers from reflected signals, 
+metal objects etc. 
+
+%\subsection{ZigBee}
+%\label{sec:zigbee}
+%
+%ZigBee is a short distance, low-rate wireless network technology 
+%and achieves positioning with the coordination of 
+%communications by thousands of tiny
+%sensors. These sensors require very little energy to relay the data passing between the
+%sensors leading to a very efficient communication. 
+%The accuracy of such systems is limited and systems 
+%become unstable with clusters of people. 
+%The associated cost is also higher 
+%due to use of large sensors.
+%Wireless Dragon 
+%positioning system is a representative 
+%ZigBee positioning system developed by Chengdu 
+%Wireless Dragon Communication Technology Co., Ltd. 
+
+\section{RFID}
+\label{sec:rfid}
+
+Radio frequency (RF) technologies use frequency signals 
+which can travel through walls and human bodies easier
+therefore offering a larger coverage area and
+less requirement of hardware. The RFID positioning
+systems are commonly used in complex indoor environments
+and offer cheap identification.
+
+
+LANDMARCE positioning system is a RFID-based indoor
+positioning system developed by Michigan State University and the Hong Kong
+University of Science and Technology (~\citet{ni04}). 
+The system uses fixed position reference tags and 
+%which are placed in a fixed position 
+and RFID readers to determine the nearest reference 
+%the compare the signal strength from the target and 
+%reference tags to determine 
+tag from the target tag followed by locaiton estimation. 
+%Location can be determined by the nearest reference and reference tags. 
+Jin \emph{at al.} further improved LANDMARC with respect to system's energy consumption
+and costs (~\citet{jin06}). 
+
+WhereNet positioning system offers indoor and outdoor real-time positioning 
+(~\citet{wherenet08}).
+RFID technology is used to identify various located tags mounted 
+on the target located objects, such as a device or a person.
+The system uses differential time of arrival algorithm to 
+calculate the precise locations of these tags.
+The tags are powered by batteries which can last up to 7
+years depending on the transmission rate of the tags. However,
+the WhereNet offers an error range around 2 m to 3 m,
+which is not very accurate in indoor situations. The system
+is complex and the installation of these devices is
+time consuming.
+
+The advantage associated with RFID positioning system is light and small
+tags that can be taken by people to be tracked. The RFID
+system can uniquely identify equipment and persons tracked
+in the system. However, the absolute positioning
+techniques need numerous infrastructure components installed
+and maintained in the working area of an RFID positioning
+system which increases the overall cost.
+
+%The disadvantage of such positioning systems is the RF signal
+%influenced by the antenna, the role of proximity does not have the communications
+%capabilities, positioning coverage is small, and not easily integrated into other
+%systems. 
+
+\subsection{WLAN}
+\label{sec:wlan}
+
+WLAN technology is very popular and 
+is widely used in business districts, universities, airports etc. 
+WLAN-based positioning systems reuse the
+existing WLAN infrastructures in indoor environments, which
+lower the cost of indoor positioning. In case of unavailability 
+of WLAN infrastructure, the associated cost increases. 
+This positioning technology uses the WLAN client such as 
+laptop, PDA, phone etc to get the received signal strength (RSS) 
+or signal to noise ratio (SNR) from wireless network interface card. 
+
+
+RADAR positioning system was proposed
+by a Microsoft research group as an indoor position tracking
+system (~\citet{bahl00}). 
+It uses signal strength and SNR with
+the triangulation location technique. The RADAR system can
+provide 2-D absolute position information and thereby enable
+location-based applications for users.
+The major advantages of RADAR system are that the
+use of existing indoor WLAN infrastructures and requirement of
+few base stations to perform location sensing. However, the
+limitation is that the located object needs to be equipped with
+WLAN technology which is difficult for some lightweight
+and energy-limited devices. There is also no consideration
+of privacy issues where a person 
+using a device with WLAN interface may be tracked,
+even he/she does not want any one know his/her location. In
+addition, the RADAR system suffers from the limitations of
+RSS positioning methodology.
+
+
+The COMPASS system uses WLAN infrastructures 
+and digital compasses to provide low cost and 
+high accurate positioning services to locate
+a user carrying a WLAN-enabled device (~\citet{king06}). 
+The COMPASS system uses fingerprinting location technique
+and a probabilistic positioning algorithm to determine the
+location of a user. During position estimation, 
+the user’s orientation is measured by a
+digital compass to reduce the human body blocking influence.
+For the tracking of a mobile user, the orientation impact
+is highly addressed by the designers
+of both RADAR and COMPASS system. As human body
+contain more than 50\% water, which absorbs the 2.4 GHz
+radio signal, the clocking effect of human body influences the
+measurement accuracy. The COMPASS system achieves an 
+accuracy of about 1.65 m compared to RADAR
+system which has an error distance of 2.26 m in the same 
+indoor place. However, the COMPASS system only considers tracking a
+single user which reduces its scalability.
+
+WLAN systems provide very cheaper 
+indoor position estimation due to re-usability 
+of existing infrastructures in indoor environments. 
+WLAN technology is widely used
+and integrated in various wireless devices such as PDAs,
+laptops, mobile phones, etc. However, because of complex indoor
+environments consisting of various influenced sources, 
+the performance of the positioning systems are not very
+accurate with an accuracy of several meters. And using the
+stored information and fingerprinting technique in the location
+estimations is complex and costly if the number of users of
+the positioning system is increasing significantly.
+The fingerprinting requires a costly and time consuming signal 
+strength calibration at the kick off. Some recent solutions 
+do not require calibration and an accuracy of 2-7 m is achievable 
+which is good (~\cite{chintalapudi10}). 
+
+\section{Audible Sound}
+\label{sec:sound}
+Audible sound is a possible technology for indoor positioning
+as almost every mobile device has that ability.
+% of emitting audible sound such as mobile phone, PDA, etc. 
+%The audible sound-based positioning system can reuse these devices owned
+%by the users for indoor positioning. Wearable tracked tags are
+%no longer needed resulting in a low-cost system.
+Beep was designed as a cheap positioning solution 
+based on audible sound technology (~\citet{lopes06}).
+Triangulation location technique is used in Beep with a standard
+3-D multilateration algorithm based on time of arrival measured
+by the sensors in Beep system. The 3-D location information
+determined by Beep can be used by various practical applications.
+%as proposed by Beep in the situations, such as office
+%building, shopping center, etc.
+%Figure 18 shows the architecture of the Beep positioning
+%system. A roaming device is used as a tracked target in the
+%system to send audible sound. Various acoustic sensors (Si)
+%are pre-installed at fixed positions in the measuring area and
+%connected to the central server through wireless connection
+%(Ri). These sensors receive the audible sound transmitted from
+%the tracked device and forward these data to the central server
+%through WLAN. TOA technology and triangulation method
+%are used to estimate the position of the device. Finally, the
+%roaming device can get its position information from the
+%central server via WLAN. The testing experiments were taken
+%in a 20 m × 9 m room. The positioning system can achieve
+The system gives an accuracy of 0.4 m with 90\% . 
+In addition, the effect of sound noise and obstacles reduce the positioning
+accuracy by 6-10\%. One of the benefits brought by the Beep system is that the
+privacy of the users is considered by avoiding them being
+tracked automatically. The users can stop their devices from
+sending audible sound; if they do not want the system knows
+their location.
+
+Audible sound is an available service in various mobile devices used
+in our daily lives. Thus the users can use their personal devices
+in an audible sound positioning system to get their positions.
+Because of properties of audible sound, using it for indoor
+positioning has some limitations. The audible sound can be
+interfered by the sound noises in the dynamic changing and
+public indoor situations. Audible sound does not have high
+penetration ability, so the scope of an infrastructure component
+is within a single room. The associated cost will increase 
+with more rooms. Transmitting audible sound is a kind
+of noise to indoor environments, where people would not like
+to hear audible sound made by the positioning services.
+
+\section{Vision}
+\label{sec:vision}
+The main merit of vision basd system is 
+a low price camera can covera large area. However,
+these systems have some drawbacks. Firstly, the privacy
+of people is not provided by the vision-based positioning.
+Secondly, the system is not reliable in a dynamic changing
+environment. However, the problem is often solved 
+by using an incremental approahc in which data base 
+is updated with new images. The visionbased
+positioning is influenced by light such as turning on and off
+a light. Our system targets to provide guidance to blind person 
+who often visits the building during day time and can take multiple pictures 
+to localisae the place. 
+
+
+\section{Image based Localisation}
+\label{sec:image}
+
+Our work is based on scene localisation using computer vision 
+which deals with the images. The basic idea is to match the 
+current image with stored images and get the corresponding 
+location information. 
+Image based indoor location recognition
+is an active research problem and has been widely studied 
+by computer vision researchers. In this section, 
+we discuss different good techniques which offer a robust scene 
+recognition in different environments.
+
+
+The visual Bag of Words (BoW) approach offers robust image 
+matching and is used in many 
+research works for location recognition. 
+In Sivic and Zisserman (\cite{sivic03}), the idea of visual BoW
+was introduced for the
+first time for object retrieval. 
+Given a query object, the
+system is able to search 
+and localize all the occurrences of 
+that object in a video. The 
+inverse document frequency ($idf$)
+weighting scheme was used for image 
+retrieval.
+
+Nister and Stewenius (\cite{nister06}) used 
+a scheme based on visual BoW
+scalable to large image databases is presented.
+Their scheme is based on hierarchical clustering 
+and uses term frequency-inverse document frequency ($tfidf$)
+weighting, which
+is shown to be very effective 
+for retrieval in large scale data sets.
+The system is able to match an image 
+robustly in about one second.
+
+Tom \emph{et al.} presented a real-time approach 
+for the detection of identical scenes (\cite{tom08}). 
+The work is based on visual BoW which uses the
+SURF features and hue information 
+for a robust  image matching. The system matches 
+a query image from a standard data set of 10200 images 
+in about 0.036 seconds.
+
+
+Filliat (\cite{davidf07}) used a two stage voting
+scheme for indoor matching. 
+SIFT, hue and texture features are used for visual
+BoW and a room is recognized only
+if a quality threshold is reached. 
+The work is only tested for a small scale indoor 
+environment but it has not been shown to work 
+in office buildings which have similar 
+color/texture schemes in many places.
+
+
+In Kang \emph{et al.} (\cite{kang09}), visual BoW is used to perform matching
+on a large scale indoor office environment. 
+The top eight images most similar to the query image are 
+retrieved via visual BoW. A potential localization
+is suggested if there are a cluster of pre-recorded images less than 3 meters from each
+other among the retrieved images. The proposed system
+performs well in an office like indoor building.
+
+
+Robertson and Cipolla (\cite{duncan04}) used homography and rectification 
+for scene recognition in an outdoor environment.
+In their work, camera's are assumed calibrated (or at least
+approximately so), and database images are assumed rectified. Features
+are identified using the Harris corner detector and a RANSAC based
+algorithm for image registration is applied. The query image is
+matched against each database image and the closest match is returned
+as the location. 
+
+In Zhang \emph{et al.}~\cite{zhang06}, the image localisation is performed in 
+the urban environment. The system computes the 
+GPS location of the novel query image 
+from a database of city street scenes tagged with 
+GPS locations. The two closest views relative to the query 
+image are first retrieved from the database based on 
+SIFT~\cite{lowe04} feature matching followed by 
+the motion estimation. 
+The location of the query 
+image is finally estimated by the triangulation of GPS 
+positions of the closest views. 
+
+Skrypnyk \emph{et al.}~\cite{sky04} presented 
+one of the first systems to estimate the pose 
+of the query image with respect to 
+the 3D model. A sparse 3D model 
+from objects of interest is reconstructed using 
+multi view geometry and the associated SIFT descriptors 
+are stored in a kd-tree. A robust algorithm is then used 
+to estimate the pose of a query object with respect to 
+the 3D models via 2D-3D correspondences.
+
+Sattler \emph{et al.}~\cite{torsten11} 
+presented a direct 2D-3D matching framework 
+based on visual vocabulary for image matching. 
+A novel approach is proposed to find 2D-3D correspondences 
+efficiently followed by the pose estimation. The system 
+performs well on city scale large data sets.
+
+
+In Irschara \emph{et al.}~\cite{irschara09}, 
+a fast location recognition technique 
+based on $sfm$  is presented. A minimal set of "synthetic" 
+images which represent the 3D models of places is 
+derived first to compress the 3D data. Given a query image, 
+the system then uses the vocabulary tree to retrieve 
+the similar images from this compressed data 
+based on the pose estimation. 
+
+Most research works focus on direct matching of
+2D features (query) to 3D points (3D models) 
+for localisation. However Li  \emph{et al.}~\cite{li10},
+proposed an opposite approach based on 
+3D-2D matching. The work uses a priority scheme 
+to effectively compute the 2D-3D correspondences 
+followed by the pose estimation. The proposed scheme works quite fast
+on large scale data sets compared to the direct matching which is 
+slow. 
+
+
+Arth \emph{et al.}~\cite{arth2009}
+used an efficient method to localise
+the image on the mobile phone 
+based on 3D models. The 
+3D models of the places are 
+reconstructed and part of it is loaded in the phone memory. 
+The system extracts the features from the 
+camera query image, loads the relevant part of 
+the feature data base in the phone memory and performs 
+the pose estimation to match the image. 
+The experiments are conducted in indoor 
+rooms.
+
+Mulloni \emph{et al} \cite{mulloni09} proposed an indoor 
+positioning system where the smart phone 
+application sends the query photo to a server. 
+The server uses SURF features \cite{bay06}, 
+distance estimation and calibration 
+to estimate the indoor position.
+The system shows good performance 
+on a long corridor. 
+
+Hile \emph{et al} \cite{hile07} 
+presented a smart phone application 
+which sends the query image along 
+with WIFI fingerprints to a server. 
+The server computes feature correspondences 
+with the floor plan to estimate the pose
+and returns the position information to the 
+user. The system does well with hallway images.
+
+
+Kawaji \emph{et al.} \cite{kawaji10} proposed an image 
+based indoor localization system using omnidirectional 
+panoramic images. The system uses SIFT features \cite{lowe04} 
+to match the query image with a database 
+of mapped images by using nearest neighbor search 
+based on local sensitive hashing. The system 
+is shown to work in a Railway museum.
+
+
+Ruf \emph{et al.} \cite{ruf08} integrated 
+SIFT and SURF for image matching 
+based on nearest neighbor search 
+leading to precise position estimation inside 
+a museum. However the proposed system 
+produced acceptable accuracy at the expense of high computational
+cost.
+
+More recently, 
+object detection and probabilistic semantics have been used in a
+small scale indoor
+environment to identify the place type~\cite{espinace10}. 
+Their work should be applicable to indoor 
+environments of any type/scale
+but will perform slower as objects 
+segmentation, objects classification 
+and then use of semantics is usually slow.
+
+The idea of visual BoW is used by different authors 
+for robust object recognition in large scale data sets. 
+Phibin \emph{et al.} used spatial information 
+to verify the consistency of retrieved images 
+to re-rank the retrieved results (~\citet{philbin07}).
+The initially returned result list is re-ranked by estimating 
+afﬁne homographies between the query image and each
+of the top-ranking results from the initial query. The score
+used in re-ranking is computed from the number of verified 
+inliers for each result.
+Philbin \emph{et al.} later extended his work 
+by exploring techniques to map visual region 
+to a weighted set of words to include features
+which get lost in the quantization stage (~\citet{philbin08}). 
+The proposed method 
+of visual assignment is found to perform better than
+ state of the art techniques on different large data sets. 
+
+Aly \emph{et al.} analysed the performance of visual 
+BoW with two leading methods i.e. inverted file and 
+mini-hash on four diverse real world large data sets (~\citet{aly09}). 
+The effect of the different parameters
+of these methods on the recognition performance
+and the run time are analysed in the paper. The work 
+basically targets object recognition.
+
+Lazebnik \emph{at al.} presented the idea 
+of a spatial pyramid with visual BoW (~\citet{lazebnik06}). 
+The “spatial pyramid” is a simple and computationally efficient
+extension of an orderless bag-of-features image representation 
+to get improved performance in scene categorization tasks.
+The proposed method works by repeatedly subdividing
+an image and computing histograms of image features
+over the resulting subregions. The system does well on 
+standard datasets for image matching. 
+
+Ji \emph{et al.} proposed a framework to perform 
+landmark search via smart phone efficiently without the 
+need to send query photo to the server (~\citet{ji12}).
+When user starts the application, the GPS information is 
+used to download the generalized visual vocabulary 
+codebook on the phone. When user selects a query photo, 
+local features are extracted from the phone 
+followed by the generation of a compact Location Discriminative 
+Vocabulary Code (LDVC) compact descriptor from the 
+generalized vocabulary. The information normally in 10-50 bits 
+is sent to the server for matching and results are returned 
+to the phone. The proposed approach results in lower 
+transmission rates and provide very good performance. 
+The descriptor is sent to the server, 
+
+\section{Conclusion}
+\label{sec:conclusion}
+In this chapter, we have discussed some key works in area of visual navigation. 
+This was followed by comparison of different localization techniques.
+Finally, we mention different research works which have used visual 
+BoW to perform image matching in indoor and outdoor environments.
+We also mention the limitations of these works to highlight the need 
+of an indoor localisation system based on vision.
+
+%\subsection{GPS-Based}
+%GPS is not reliable in indoor due to 
+%satellite signal attenuation. 
+%SnapTrack\footnote{\url{http://www.qualcomm.com/}} 
+%a Qualcomm company developed wireless assisted 
+%GPS (A-GPS) to overcome the limitation of a GPS and 
+%provide positioning with an accuracy of 5-50m in most environments.
+%A-GPS uses the mobile phone network to 
+%assist the GPS receiver in the mobile phone 
+%to overcome the low signal level problems. 
+%A-GPS uses a location server 
+%with a reference GPS receiver that can 
+%simultaneously detect the same satellites as wireless handset 
+%with a partial GPS receiver. This helps the partial GPS receiver to 
+%find weak GPS signals. The wireless handset collects measurements 
+%from both GPS constellation and wireless mobile network 
+%which are combined by location server to estimate the indoor position.
+%The indoor position is then communicated to the handset.
+%GPS receiver needs to be on every time and it should be installed at 
+%a place where it can see all satellites. 
+%%
+%%Remazeilles \emph{et al.} (~\citet{remazeilles04}) used an appearance based navigation 
+%%system. The system uses an image data base which is a set of views 
+%%built off line representing the whole navigable environment.
+%%Once navigation mission is defined, an image sequence corresponding to 
+%%what robot should see during the motion is extracted from the data base.
+%%The robot motion is the result of online detection and matching 
+%%process between the models included in the sequence and 
+%%perceived scenes.To navigate, the robot tracks recognizable previously cataloged 
+%%features.
+%%
+%%Fraundorfer \emph{et al.} (~\citet{ fraundorfer})proposed vision based localisation and mapping 
+%%for robot navigation. The environment is represented as a linked 
+%%collection of way point images. The collection is built online while 
+%%robot is exploring the environment.  Links are created between the 
+%%sequential images and are inserted by image matching. 
+%%An efficient image matching scheme allows real time mapping and global 
+%%localsation. 
+%%
+%%Booji \emph{et al.} (~\citet{booji}) 
+%%proposed navigation via image based topological map. 
+%%The robot is driven through the environment and keeps on 
+%%taking the pictures. The system uses epipolar constraints 
+%%based on SIFT features to match the images. By conputing the 
+%%similarities between these images a topological map 
+%%in form of in form of an appearance graph is created.Navigation on 
+%%this graph involves heading from one node to the other.
+%%
+%%Se \emph{et al.} (~\citet{se01}) proposed a vision based localisation and mapping 
+%%algorithm which uses scale invariant image features as landmarks in unmodified 
+%%dynamic environments. The 3D landmarks are localised and robot 
+%%ego-motion is estimated by matching them 
+%%taking into account the feature viewpoint extraction.
+%%
+%%Feature tracking navigation systems tracks features 
+%%in consective frames to perform the navigation. 
+%%Pears and Liang \emph{Et al.} (~\citet{liang02}) 
+%%use hoographies to track ground plane corners 
+%%in indoor buildings.  The same authors extended their 
+%%work by using homographies to calculate the height of 
+%%tracked features or obstacles above the ground plane during the navigation. 
+%%
+%%During robot driving throught the environment, SIFT based methods extract 
+%%the important features from the environment which 
+%%serve as landmarks to be tracked for navigation, global 
+%%localisation and robust vision based SLAM performance 
+%%(~\citet{se02, se05}).
+%%%\begin{itemize}
+%%%\item \textbf{Map based navigation:} 
+%%%These systems require a map of the environment 
+%%%for the navigation. It also includes those systems that can explore the environment 
+%%%and build the map by themselves. However 
+%%%the environment needs to be explored first 
+%%%and its representation is stored before the start of navigation.
+%%%Therefore systems in this category will start 
+%%%navigation if and only the environment map 
+%%%is available.
+%%%
+%%%\item \textbf{Mapless navigation:}
+%%%It includes all navigation approaches that do not 
+%%%require any knowledge of the environment for navigation
+%%%run. Navigation is performed on the basis of elements 
+%%%observed in the environment such as walls, features,
+%%%doors, desks, etc. 
+%%%
+%%%\end{itemize}
+%%%
+%%%In the last few years, lot of progress is observed in context 
+%%%of visual navigation. The older techniques have been refined 
+%%%and lot of new techniques are also presented 
+%%%which have led to a more accurate and 
+%%%efficient navigation systems. We review some of the 
+%%%visual navigation approaches used for map based and 
+%%%mapless navigation in the following sections. 
+%%%
+%%%
+%%%\subsection{Map based systems}
+%%%This category includes systems that need a complete map 
+%%%of the environment before the start of navigation.
+%%%Other systems in this category are able to 
+%%%explore the environment and 
+%%%automatically build a map. However the navigation 
+%%%phase will start only once the map is built. 
+%%%The map information can be directly 
+%%%used for navigation or it can be
+%%%post-processed to improve the map accuracy
+%%%to achieve a more precise localization. 
+%%In the recent years, visual sonar is also used 
+%%for the navigation purposes. It uses range data and depth measurements 
+%%for navigation purposes in an analogous way to 
+%%ultrasound sensors. Martin used the same idea 
+%%to compute depth from single camera images of indoor 
+%%environments (~\citet{martin06}).
+%% The genetic programming is used to 
+%%discover the best algorithm to detect the ground boundaries 
+%%in a training phase. These algorithms then use obstacle 
+%%avoidance strategies initially developed for sonar.
+%%The algorithms are designed to be a 
+%%replacement for sonar, returning the location of
+%%the nearest obstacle in a given direction. The three 
+%%indoor data sets were used with a total of 
+%%images from four different hall ways.
+%%
+
+%%%
+%%% 
+%%%\section{Visual Indoor Navigation}
+%%%\begin{enumerate}
+%%%\item Map based navigation
+%%%\begin{enumerate}
+%%%\item Topological maps
+%%%\item Local maps
+%%%\end{enumerate}
+%%%
+%%%\item Map less navigation
+%%%\begin{enumerate}
+%%%\item Optical Flow
+%%%\item Appearance based navigation
+%%%\item Feature based navigation
+%%%\end{enumerate}
+%%%\end{enumerate}
+%%
+%%
+%%%\section{Simultaneous Localisation and Mapping (SLAM)}
+%%%A brief discussion about SLAM.
+%%%\subsection{Visual SLAM}
+%%%Discussion about SLAM based on images.
+%%%I will mention some of the research works 
+%%%based on Visual SLAM for robotics.
+%%
+%%\subsubsection{Loop Closure}
+%%Discuss the importance 
+%%of loop closure i.e. identification of the place 
+%%which has been already visited.
+%%
+%%
+%%
+%%\section{Image based localization}
+%%I will state that our indoor location recognition is 
+%%also based on image based localisation.
+%%We are doing a 2D image base matching.
+%%I will discuss some research works briefly 
+%%which have done localisation in indoor environments
+%%using different techniques based on 2D images.
+%
+%
+%\subsection{Indoor Navigation Systems}
+%Simultaneous localization and mapping (SLAM) is a 
+%technique used by robots and autonomous vehicles 
+%to build up a map within an unknown environment (without a priori knowledge), or to update a map within a known environment (with a priori knowledge from a given map), while at the same time keeping track of their current location.
+%
+%Indoor navigation systems are based on different technologies 
+%such as WIFI, laser range etc. Each technology used for 
+%indoor navigation system has its pros and cons. Some commonly used 
+%technologies for indoor navigation system are as follows:-
+%
+%%\subsection{Using Laser Scanner} 
+%%In indoor, the localization using laser range 
+%%finder has been used a lot. However these 
+%%methods provide a 2D map of the environment. 
+%%
+%%The navigation system these days are based on different technologies.
+%%Every technology has it pros and cons.
+%%
+%%\subsection{With WIFI Fingerprints}
+%%\subsection{With Images}
+%%\subsection{With Smartphones}
+%
+%
+%%\section{Visual Navigation}
+%%\label{sec:visualnavigation}
+%%
+%%The vision (image or videos) has become common in applications 
+%%such as localisation, automatic map construction, 
+%%autonomous navigation, path following etc in the 
+%%last few years. The navigation techniques based 
+%%on vision increase the scope of application of autonomous 
+%%mobility and have resulted in countless research 
+%%contributions for robots, autonomous ground vehicles, 
+%%unmanned aerial vehicles and blind people. 
+%%The systems that use vision for navigation can be 
+%%divided into two main categories:-
+%%

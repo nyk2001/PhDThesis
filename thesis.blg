@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99cThe top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: navtools.aux
+A level-1 auxiliary file: literature.aux
+A level-1 auxiliary file: conclusion.aux
+The style file: otago.bst
+Database file #1: thesis.bib
+Warning--entry type for "wherenet08" isn't style-file defined
+--line 908 of file thesis.bib
+A bad cross reference---entry "torsten11"
+refers to entry "DBLP:conf/iccv/2011", which doesn't exist
+Warning--I didn't find a database entry for "paul08"
+Warning--I didn't find a database entry for "rasiwasia08"
+Warning--I didn't find a database entry for "shen06"
+Warning--I didn't find a database entry for "bay06"
+Warning--I didn't find a database entry for "DBLP:conf/iccv/2011"
+Warning--empty booktitle in angeli08
+Warning--can't use both volume and number fields in angeli08
+Warning--empty booktitle in bonin-font08
+Warning--can't use both volume and number fields in bonin-font08
+Warning--empty booktitle in boonifait08
+Warning--empty booktitle in botteril10
+Warning--empty booktitle in chen07
+Warning--empty booktitle in davison07
+Warning--can't use both volume and number fields in davison07
+Warning--empty booktitle in estrada05
+Warning--can't use both volume and number fields in estrada05
+Warning--empty booktitle in georgy11
+Warning--can't use both volume and number fields in georgy11
+Warning--can't use both volume and number fields in gu09
+Warning--empty booktitle in harter02
+Warning--can't use both volume and number fields in harter02
+Warning--empty booktitle in james08
+Warning--can't use both volume and number fields in ji12
+Warning--empty institution in interview10
+Warning--empty booktitle in kidono02
+Warning--empty title in king06
+Warning--empty booktitle in ko08
+Warning--can't use both volume and number fields in lopes06
+Warning--empty booktitle in ran04
+Warning--empty booktitle in se05
+Warning--empty year in cane1
+Warning--empty booktitle in cane1
+Warning--empty booktitle in trucco06
+Warning--can't use both volume and number fields in trucco06
+Warning--can't use both volume and number fields in ultrasound04
+Warning--empty institution in who12
+(There was 1 error message)

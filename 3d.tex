@@ -1,0 +1,150 @@
+\chapter{Scene localization using 2D to 3D direct matching}
+A brief overview of the chapter. 
+
+\section{2D to 3D Image Matching}
+I will discuss the need to use 3D information 
+for scene localisation by stating that it is considered 
+to give very good results. 
+I mention the two ways which are used 
+to perform a 2D to 3D image matching:-
+
+\begin{enumerate}
+\item Direct Matching:-
+\item Indirect Matching:-
+\end{enumerate}
+
+\subsection{Related Work}
+I will briefly discuss some of the 
+works in which 3D features are being used 
+for the 2D image matching. I will then mention
+the inspired work.
+
+\section{3D Model Reconstruction}
+I will briefly discuss the tools which can 
+be used for 3D model generation:- 
+
+
+\begin{enumerate}
+\item Bundler
+\item Photo Scan
+\item Visual SFM
+\end{enumerate}
+
+I will then state that I have used bundler in our work. 
+
+\subsection{Partial 3D Models}
+I will also mention that we have been able to recover only 
+partial 3D models of the indoor places. So we have 
+combined partial 3D models into a single one for 
+each and every location. 
+I will include some images from the 
+blender software.
+
+\subsection{ Features from 3D Models}
+I will discuss the three types of 
+features we have extracted from 3D models:-
+
+\begin{enumerate}
+\item Less Visible:-
+\item High Visible:-
+\item Average:-
+\end{enumerate}
+
+\section{2D to 3D Matching}
+I will state that I have used direct 2D to 3D naive image 
+matching i.e. all 3D features are stored in a kd tree.
+The query image features can be mapped to kd tree 
+to find the 3D model giving maximum correspondences.
+I got poor performance and will mention some reasons.
+
+
+\subsection{Pose Estimation i.e. 2D to 3D matching}
+Direct correspondences matching 
+was not working good. So I decided to use pose estimation 
+to find the best match against the query image i.e. 
+3D model giving maximum number 
+of inliers against the query will be selected as the best match. The 
+results are good and better than naive 2D to 3D image 
+matching. I will state the proposed algorithm:-
+
+I will then briefly discuss the used pose estimation methods:-
+\begin{enumerate}
+\item Iterative Method:-
+\item EPnP Method:-
+\item P3P Method:-
+\end{enumerate}
+
+
+\section{Normal 2D Image Matching}
+I will mention that I experimented with normal 
+2D image matching which is not only efficient 
+but it also worked better than 
+pose estimation based matching. 
+
+
+Our main prupose is to reduce the false 
+acdeptance rate. 
+We have therefore proposed a hybrid algorithm 
+which makes use of 2D image matching first to identify 
+the location. 3D model of that location is then compared with the query
+image via the pose estimation. The used algorithm is as follows:- 
+
+
+\section{Data Sets}
+\begin{enumerate}
+\item Trained Images:-  
+I will state the number of images taken from 
+four different indoor locations via DSLR Camera 
+(i.e. 186 Images in total with a very high resolution). 
+\item Query Images:-
+I will mention that seven different mobile devices 
+are used in our experiments for capturing 60 images each. 
+These images are captured atleast 2 months after 
+the capturing of trained images. 
+ 
+\end{enumerate}
+\subsection{Mobile Devices}
+
+\begin{enumerate}
+\item HTC Wildfire S:-
+\item IDEOS (UD-850):-
+\item iPhone (3GS):-
+\item Huawei Slim (S7) Tablet:-
+\item Nokia (N95):-
+\item Smasung (i7-500)
+\item Nokia (C3):-
+\end{enumerate}
+
+\subsection{Performance Metrics}
+\begin{enumerate}
+\item True Positive rate
+\item Registration rate
+\item False rejection rate
+\end{enumerate}
+\section{Results}
+\subsection{True Positive Rate}
+I will state the true positive rate 
+of query images against the 3D features 
+based on pose and without pose (via kd trees)
+for all mobile devices.
+
+
+\subsection{Registration Rate}
+I will now report the results for our proposed 
+hybrid system indicating the number of images 
+which are successfully registered from the correct 2D image 
+matches. I will report the results with and without 
+calibration. 
+
+\subsection{False acceptance rate}
+I will report the results of our hybrid algorithm 
+indicating how much successfully the 
+algorithm has rejected the wrong matches 
+obtained via 2D image matching.
+
+\subsection{Best Pose Estimation Statistics}
+I will briefly discuss the statistics 
+i.e. which pose estimation method has 
+done well with all smart phones in our experiments.
+  
+\section{Conclusion}

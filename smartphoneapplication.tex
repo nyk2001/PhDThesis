@@ -1,0 +1,161 @@
+\chapter{Smart phone application for scene localization}
+A brief overview of the chapter. 
+
+\section{System Implementation}
+I will briefly discuss the client server architecture 
+of our system. This will be followed by an general 
+explanation about the working of our system 
+i.e. photo taken by phone, compressed, sent to server etc.
+
+\subsection{Mobile Operating System}
+I will state different operating systems 
+available. 
+\begin{enumerate}
+\item Android from Google
+\item iOS from Apple
+\item Window Phone from Microsoft
+\item Symbian OS from Nokia
+\end{enumerate}
+
+I will then state the reason why I have used 
+Android OS. 
+
+\subsection{Mobile Phone Specifications}
+I will mention some details of our HTC smart phone 
+used to develop the application.
+
+\section{Client Side}
+I will discuss the key components of 
+our smart phone application.
+\begin{enumerate}
+\item Waiting for Screen Tapping.
+User can click any where, image will be captured.  
+\item Image Compression.
+
+Image is compressed by 50\% and sent to 
+the server.
+
+\item Waiting for reply.
+Application waits for reply from the server.
+Once it gets the reply then it generates 
+a voice message indicating the current location.
+
+\item Use of GPS
+I will state the option of using GPS to load 
+appropriate data set on the server.
+\end{enumerate}
+
+\subsection{Prototypes}
+I will discuss our first prototype with couple of buttons and 
+the final prototype with no button at all 
+via screen shots.
+\begin{enumerate}
+\item First Prototype
+\item Final Prototype
+\end{enumerate}
+
+\section{Server Side}
+I will discuss the basic functionality of server i.e. image is received 
+by servelet running on server which is copied to shared location on disk. 
+Our localization program implemented in C++ 
+reads the image and writes the location 
+information on the shared location on disk. Once servelet finds the 
+location it returns it to the android application. 
+
+
+\subsection{Servelets}
+I will briefly discuss the working of servelets i.e 
+how they are set up, which tool I am using etc.
+
+\subsection{Localization Program}
+Here I will mention that our program is based on the 
+same algorithm which was mentioned in the Chapter 4.
+Homography and fundamental matrices are used 
+for the verification. However the algorithm for real time 
+application is extended 
+to have an extra step of location validation via use of 
+reduced features discussed in the previous 
+chapter. I will then state the 
+new algorithm:-
+
+I will highlight that use of extra verification has almost no 
+impact on matching accuracy but at the same it reduces the 
+false acceptance rate significantly.  
+
+
+\section{Datasets}
+I will discuss the data sets which are used 
+for testing our scene localization system.
+
+\begin{enumerate}
+\item Owheo Building
+\item Commerce
+\item Museum
+\item Indoor
+\item Outdoor
+\end{enumerate}
+\section{Performance Metrics}
+\begin{enumerate}
+\item True Positive rate
+\item False acceptance rate
+\item False positive rate
+\end{enumerate}
+\section{Results}
+I will discuss that experiments are conducted 
+in two ways:-
+
+\begin{enumerate}
+\item Single Data set:- All mapped images 
+combined together.
+\item Multiple Data sets:-- 
+Depending upon the GPS coordinates, 
+the appropriate data set is being loaded 
+on the server.
+\end{enumerate}
+
+The performance metrics will be reported 
+in both scenarios.
+
+\subsection{True Positive Rate}
+I will compare the true positive rate of 
+our proposed BoW along with validation against:
+\begin{itemize}
+\item Simple Visual BoW : Top image is the best match
+\item Proposed Visual BoW: Our proposed with verification method
+only excluding the validation step. 
+\end{itemize}
+
+I will report the results on the data sets namely Owheo, 
+Commerce and Museum.
+
+\subsection{False Acceptance rate}
+I will compare the false acceptance rate of 
+our proposed BoW (verify+validation) against:
+\begin{itemize}
+\item Simple Visual BoW : Top image is the best match
+\item Proposed Visual BoW: Our proposed with verification method
+only. The validation step is not being used.
+\end{itemize}
+
+I will report the results on the data sets namely Owheo, 
+Commerce and Museum. These results will show the 
+improvement in false acceptance rate.
+
+
+\subsection{False Positive rate}
+I will compare the results on two data sets 
+namely Indoor and Outdoor whose images 
+are not there in the mapped images.
+
+\subsection{Voting Scheme Analysis}
+I will discuss the performance of our voting scheme 
+in terms of real time scenario.
+
+\subsection{Computational Time}
+I will discuss the time taken by the homography and 
+fundamental module to verify one image. 
+
+What is the performance if we take all matching features 
+and compute the fundamental matrix? I will discuss that as well. 
+
+\section{Conclusion}

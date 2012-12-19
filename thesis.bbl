@@ -1,0 +1,626 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Agrawal and Konolige}{Agrawal and
+  Konolige}{2006}]{agrawal06}
+Agrawal, M. and Konolige, K. (2006).
+\newblock Real-time Localization in Outdoor EnFilliavironments using Stereo
+  Vision and Inexpensive GPS.
+\newblock In {\em Proceedings of the 18th International Conference on Pattern
+  Recognition - Volume 03}, ICPR06,  1063--1068.
+
+\bibitem[\protect\citeauthoryear{Aly, Munich, and Perona}{Aly {\em
+  et~al.}}{2011}]{aly09}
+Aly, M., Munich, M.~E., and Perona, P. (2011).
+\newblock Bag of Words for Large Scale Object Recognition - Properties and
+  Benchmark.
+\newblock In {\em International Conference on Computer Vision Theory and
+  Applications},  299--306.
+
+\bibitem[\protect\citeauthoryear{Angeli, Filliat, Doncieux, and Meyer}{Angeli
+  {\em et~al.}}{2008}]{angeli08}
+Angeli, A., Filliat, D., Doncieux, S., and Meyer, J.-A. (2008).
+\newblock Fast and Incremental Method for Loop-Closure Detection Using Bags of
+  Visual Words.
+\newblock Volume~24,  1027--1037.
+
+\bibitem[\protect\citeauthoryear{Arth, Wagner, Klopschitz, Irschara, and
+  Schmalstieg}{Arth {\em et~al.}}{2009}]{arth2009}
+Arth, C., Wagner, D., Klopschitz, M., Irschara, A., and Schmalstieg, D. (2009).
+\newblock Wide area localization on mobile phones.
+\newblock In {\em 8th IEEE International Symposium on Mixed and Augmented
+  Reality}, ISMAR '09,  73--82.
+
+\bibitem[\protect\citeauthoryear{Bahl and Padmanabhan}{Bahl and
+  Padmanabhan}{2000}]{bahl00}
+Bahl, P. and Padmanabhan, V.~N. (2000).
+\newblock RADAR: An In-Building RF-Based User Location and Tracking System.
+\newblock In {\em INFOCOM},  775--784.
+
+\bibitem[\protect\citeauthoryear{Bonin-Font, Ortiz, and Oliver}{Bonin-Font {\em
+  et~al.}}{2008}]{bonin-font08}
+Bonin-Font, F., Ortiz, A., and Oliver, G. (2008).
+\newblock Visual Navigation for Mobile Robots: A Survey.
+\newblock Volume~53,  263--296.
+
+\bibitem[\protect\citeauthoryear{Bonnifait, Jabbour, and Cherfaoui}{Bonnifait
+  {\em et~al.}}{2008}]{boonifait08}
+Bonnifait, P., Jabbour, M., and Cherfaoui, V. (2008).
+\newblock Autonomous Navigation in Urban Areas using GIS-Managed Information.
+\newblock Volume~6,  84--103.
+
+\bibitem[\protect\citeauthoryear{Botteril, Mills, and Green}{Botteril {\em
+  et~al.}}{2010}]{botteril10}
+Botteril, T., Mills, S., and Green, R. (2010).
+\newblock Bag-of-Words-driven Single Camera Simultaneous Localisation and
+  Mapping.
+
+\bibitem[\protect\citeauthoryear{Botterill, Mills, and Green}{Botterill {\em
+  et~al.}}{2008}]{tom08}
+Botterill, T., Mills, S., and Green, R. (2008).
+\newblock Speeded-up Bag-of-Words algorithm for robot localisation through
+  scene recognition.
+\newblock In {\em Proc. Image and Vision Computing New Zealand.}
+
+\bibitem[\protect\citeauthoryear{Chen, Samarabandu, and Rodrigo}{Chen {\em
+  et~al.}}{2007}]{chen07}
+Chen, Z., Samarabandu, J., and Rodrigo, R. (2007).
+\newblock Recent advances in simultaneous localization and map-building using
+  computer vision.
+\newblock Volume~21,  233--265.
+
+\bibitem[\protect\citeauthoryear{Chintalapudi, Padmanabha~Iyer, and
+  Padmanabhan}{Chintalapudi {\em et~al.}}{2010}]{chintalapudi10}
+Chintalapudi, K., Padmanabha~Iyer, A., and Padmanabhan, V.~N. (2010).
+\newblock Indoor localization without the pain.
+\newblock In {\em Proceedings of the sixteenth annual international conference
+  on Mobile computing and networking}, MobiCom '10,  173--184.
+
+\bibitem[\protect\citeauthoryear{Clemente, Davison, Reid, Neira, and
+  Tard\'{o}s}{Clemente {\em et~al.}}{2007}]{clemente07}
+Clemente, L., Davison, A., Reid, I., Neira, J., and Tard\'{o}s, J.~D. (2007).
+\newblock Mapping Large Loops with a Single Hand-Held Camera.
+\newblock In {\em Proceedings Robotics: Science and Systems Conference}.
+
+\bibitem[\protect\citeauthoryear{Coughlan and Shen}{Coughlan and
+  Shen}{2007}]{coughlan07}
+Coughlan, J. and Shen, H. (2007).
+\newblock Terrain Analysis for Blind Wheelchair Users: Computer Vision
+  Algorithms for Finding Curbs and other Negative Obstacles.
+\newblock In {\em Proceedings of the Conference and Workshop on Assistive
+  Technologies for People with Vision and Hearing Impairments: Assistive
+  Technology for All Ages}, Volume 415 of {\em CEUR Workshop Proceedings}.
+
+\bibitem[\protect\citeauthoryear{Davison}{Davison}{2003}]{davison03}
+Davison, A.~J. (2003).
+\newblock Real-Time Simultaneous Localisation and Mapping with a Single Camera.
+\newblock In {\em Proceedings of the Ninth IEEE International Conference on
+  Computer Vision - Volume 2}, ICCV '03.
+
+\bibitem[\protect\citeauthoryear{Davison, Reid, Molton, and Stasse}{Davison
+  {\em et~al.}}{2007}]{davison07}
+Davison, A.~J., Reid, I.~D., Molton, N.~D., and Stasse, O. (2007).
+\newblock MonoSLAM: Real-Time Single Camera SLAM.
+\newblock Volume~29,  1052--1067.
+
+\bibitem[\protect\citeauthoryear{Deville, Bologna, and Pun}{Deville {\em
+  et~al.}}{2010}]{beno10}
+Deville, B., Bologna, G., and Pun, T. (2010).
+\newblock Detecting objects and obstacles for visually impaired individuals
+  using visual saliency.
+\newblock In {\em Proceedings of the 12th international ACM SIGACCESS
+  conference on Computers and accessibility}, ASSETS '10,  253--254.
+
+\bibitem[\protect\citeauthoryear{Deville, Bologna, Vinckenbosch, and
+  Pun}{Deville {\em et~al.}}{2009}]{beno09}
+Deville, B., Bologna, G., Vinckenbosch, M., and Pun, T. (2009).
+\newblock See ColOr: Seeing Colours with an Orchestra.
+\newblock In {\em Human Machine Interaction},  251--279.
+
+\bibitem[\protect\citeauthoryear{Digital}{Digital}{2008}]{opo08}
+Digital, N. (2008).
+\newblock Optotrak.
+
+\bibitem[\protect\citeauthoryear{Espinace, Kollar, Soto, and Roy}{Espinace {\em
+  et~al.}}{2010}]{espinace10}
+Espinace, P., Kollar, T., Soto, A., and Roy, N. (2010).
+\newblock Indoor Scene Recognition Through Object Detection.
+\newblock In {\em Proc. IEEE International Conference on Robotics and
+  Automation}.
+
+\bibitem[\protect\citeauthoryear{Estrada, Neira, and Tardos}{Estrada {\em
+  et~al.}}{2005}]{estrada05}
+Estrada, C., Neira, J., and Tardos, J.~D. (2005).
+\newblock Hierarchical SLAM: Real-Time Accurate Mapping of Large Environments.
+\newblock Volume~21,  588--596.
+
+\bibitem[\protect\citeauthoryear{Ezaki, Bulacu, and Schomaker}{Ezaki {\em
+  et~al.}}{2004}]{ezaki04}
+Ezaki, N., Bulacu, M., and Schomaker, L. (2004).
+\newblock Text Detection from Natural Scene Images: Towards a System for
+  Visually Impaired Persons.
+\newblock In {\em 17th International Conference on the Pattern Recognition},
+  ICPR '04,  683--686. IEEE Computer Society.
+
+\bibitem[\protect\citeauthoryear{Fasola and Veloso}{Fasola and
+  Veloso}{2006}]{fasola06}
+Fasola, J. and Veloso, M.~M. (2006).
+\newblock {Real-time Object Detection using Segmented and Grayscale Images}.
+\newblock In {\em International Conference on Robotics and Automation},
+  4088--4093.
+
+\bibitem[\protect\citeauthoryear{Filliat}{Filliat}{2007}]{davidf07}
+Filliat, D. (2007).
+\newblock A visual bag of words method for interactive qualitative localization
+  and mapping.
+\newblock In {\em International Conference on Intelligent Robotics and
+  Systems.},  3921--3926.
+
+\bibitem[\protect\citeauthoryear{Gartshore, Aguado, and Galambos}{Gartshore
+  {\em et~al.}}{2002}]{gartshore02}
+Gartshore, R., Aguado, A., and Galambos, C. (2002).
+\newblock Incremental map building using an occupancy grid for an autonomous
+  monocular robot.
+\newblock In {\em ICARCV},  613--618. IEEE.
+
+\bibitem[\protect\citeauthoryear{Gemeiner, Davison, and Vincze}{Gemeiner {\em
+  et~al.}}{2008}]{gemeiner08}
+Gemeiner, P., Davison, A., and Vincze, M. (2008).
+\newblock Improving Localization Robustness in Monocular {SLAM} Using a
+  High-Speed Camera.
+\newblock In {\em Proceedings of Robotics: Science and Systems IV},  183--188.
+
+\bibitem[\protect\citeauthoryear{Georgy, Karamat, Iqbal, and Noureldin}{Georgy
+  {\em et~al.}}{2011}]{georgy11}
+Georgy, J., Karamat, T., Iqbal, U., and Noureldin, A. (2011).
+\newblock Enhanced MEMS-IMU/odometer/GPS integration using mixture particle
+  filter.
+\newblock Volume~15,  239--252.
+
+\bibitem[\protect\citeauthoryear{Green, Ch, Sevcik, and Barrows}{Green {\em
+  et~al.}}{2003}]{green03}
+Green, W.~E., Ch, P.~Y., Sevcik, K., and Barrows, G. (2003).
+\newblock Autonomous Landing for Indoor Flying Robots Using Optic Flow.
+\newblock In {\em ASME International Mechanical Engineering Congress and
+  Exposition},  1347--1352.
+
+\bibitem[\protect\citeauthoryear{Gu, Lo, and Niemegeers}{Gu {\em
+  et~al.}}{2009}]{gu09}
+Gu, Y., Lo, A., and Niemegeers, I. (2009).
+\newblock A Survey of Indoor Positioning Systems for Wireless Personal
+  Networks.
+\newblock In {\em IEEE Communications Surveys \& Tutorials In Communications
+  Surveys \& Tutorials,}, Volume~11,  13--32.
+
+\bibitem[\protect\citeauthoryear{Harter, Hopper, Steggles, Ward, and
+  Webster}{Harter {\em et~al.}}{2002}]{harter02}
+Harter, A., Hopper, A., Steggles, P., Ward, A., and Webster, P. (2002).
+\newblock The anatomy of a context-aware application.
+\newblock Volume~8,  187--197.
+
+\bibitem[\protect\citeauthoryear{Hile and Borriello}{Hile and
+  Borriello}{2007}]{hile07}
+Hile, H. and Borriello, G. (2007).
+\newblock Information overlay for camera phones in indoor environments.
+\newblock In {\em 3rd international conference on Location-and
+  context-awareness},  68--84.
+
+\bibitem[\protect\citeauthoryear{Irschara, Zach, michael Frahm, and
+  Bischof}{Irschara {\em et~al.}}{2009}]{irschara09}
+Irschara, A., Zach, C., michael Frahm, J., and Bischof, H. (2009).
+\newblock From structure-from-motion point clouds to fast location recognition.
+\newblock In {\em In IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR},  2599--2606.
+
+\bibitem[\protect\citeauthoryear{Ivanchenko, Coughlan, and Shen}{Ivanchenko
+  {\em et~al.}}{2008}]{james08}
+Ivanchenko, V., Coughlan, J., and Shen, H. (2008).
+\newblock Detecting and locating crosswalks using a camera phone.
+\newblock Volume~0,  1--8.
+
+\bibitem[\protect\citeauthoryear{Ivanchenko, Coughlan, and Shen}{Ivanchenko
+  {\em et~al.}}{2010}]{james10}
+Ivanchenko, V., Coughlan, J., and Shen, H. (2010).
+\newblock Real-time walk light detection with a mobile phone.
+\newblock In {\em Proceedings of the 12th international conference on Computers
+  helping people with special needs},  229--234.
+
+\bibitem[\protect\citeauthoryear{Ji, Duan, Chen, Yao, Yuan, Rui, and Gao}{Ji
+  {\em et~al.}}{2012}]{ji12}
+Ji, R., Duan, L.-Y., Chen, J., Yao, H., Yuan, J., Rui, Y., and Gao, W. (2012).
+\newblock Location Discriminative Vocabulary Coding for Mobile Landmark Search.
+\newblock In {\em International Journal of Computer Vision}, Volume~96,
+  290--314.
+
+\bibitem[\protect\citeauthoryear{Jin, Lu, and Park}{Jin {\em
+  et~al.}}{2006}]{jin06}
+Jin, G.-y., Lu, X.-y., and Park, M.-S. (2006).
+\newblock An Indoor Localization Mechanism Using Active RFID Tag.
+\newblock In {\em IEEE International Conference on Sensor Networks, Ubiquitous,
+  and Trustworthy Computing -Vol 1 (SUTC'06) - Volume 01}, SUTC '06,  40--43.
+
+\bibitem[\protect\citeauthoryear{Kang, Efros, Kanade, and Herbert}{Kang {\em
+  et~al.}}{2009}]{hongwen09}
+Kang, H., Efros, A., Kanade, T., and Herbert, M. (2009).
+\newblock Image Matching in Large Scale Indoor Environment.
+\newblock In {\em Computer Vision and Pattern Recognition},  33--40.
+
+\bibitem[\protect\citeauthoryear{Kang, Efros, and Kanade}{Kang {\em
+  et~al.}}{2009}]{kang09}
+Kang, H., Efros, M.~H., and Kanade, T. (2009).
+\newblock Image Matching in Large Scale Indoor Environment.
+\newblock In {\em Proc. Computer Vision and Pattern Recognition},  33--40.
+
+\bibitem[\protect\citeauthoryear{Kawaji, Hatada, Yamasaki, and Aizawa}{Kawaji
+  {\em et~al.}}{2010}]{kawaji10}
+Kawaji, H., Hatada, K., Yamasaki, T., and Aizawa, K. (2010).
+\newblock Image-based indoor positioning system: fast image matching using
+  omnidirectional panoramic images.
+\newblock In {\em 1st ACM international workshop on Multimodal pervasive video
+  analysis},  1--4.
+
+\bibitem[\protect\citeauthoryear{Khan and James}{Khan and
+  James}{2010}]{interview10}
+Khan, N. and James (2010).
+\newblock Interview wih blind person: Navigation System Requirements.
+\newblock Technical report.
+
+\bibitem[\protect\citeauthoryear{Khan and McCane}{Khan and
+  McCane}{2012}]{khan12b}
+Khan, N. and McCane, B. (2012).
+\newblock Smartphone application for indoor scene localization.
+\newblock In {\em Proceedings of the 14th international ACM SIGACCESS
+  conference on Computers and accessibility}, ASSETS '12,  201--202.
+
+\bibitem[\protect\citeauthoryear{Khan, McCane, and Mills}{Khan {\em
+  et~al.}}{2012a}]{khan12c}
+Khan, N., McCane, B., and Mills, S. (2012a).
+\newblock Feature set reduction for image matching in large scale environments.
+\newblock In {\em Proc. International Conference on Image and Vision
+  Computing},  68--72. ACM.
+
+\bibitem[\protect\citeauthoryear{Khan, McCane, and Mills}{Khan {\em
+  et~al.}}{2012b}]{khan12a}
+Khan, N., McCane, B., and Mills, S. (2012b).
+\newblock Vision based indoor scene localization via smart phone.
+\newblock In {\em Proceedings of the 13th International Conference of the NZ
+  Chapter of the ACM's Special Interest Group on Human-Computer Interaction},
+  CHINZ '12,  88--88.
+
+\bibitem[\protect\citeauthoryear{Khan, McCane, and Wyvill}{Khan {\em
+  et~al.}}{2011a}]{khan11a}
+Khan, N., McCane, B., and Wyvill, G. (2011a).
+\newblock Homography based Visual Bag of Word Model for Scene Matching in
+  Indoor Environments.
+\newblock In {\em Proc. International Conference on Image and Vision
+  Computing}.
+
+\bibitem[\protect\citeauthoryear{Khan, McCane, and Wyvill}{Khan {\em
+  et~al.}}{2011b}]{khan11b}
+Khan, N., McCane, B., and Wyvill, G. (2011b).
+\newblock SIFT and SURF Performance Evaluation Against Various Image
+  Deformations on Benchmark Dataset.
+\newblock In {\em Proc. Digital Image Computing and Techniques},  501--506.
+
+\bibitem[\protect\citeauthoryear{Kidono, Miura, and Shirai}{Kidono {\em
+  et~al.}}{2002}]{kidono02}
+Kidono, K., Miura, J., and Shirai, Y. (2002).
+\newblock Autonomous Visual Navigation of a Mobile Robot Using a Human-Guided
+  Experience.
+\newblock Volume~40,  2--3.
+
+\bibitem[\protect\citeauthoryear{King, Kopf, Haenselmann, Lubberger, and
+  Effelsberg}{King {\em et~al.}}{2006}]{king06}
+King, T., Kopf, S., Haenselmann, T., Lubberger, C., and Effelsberg, W. (2006).
+\newblock In {\em COMPASS: A Probabilistic Indoor Positioning System Based on
+  802.11 and Digital Compasses}.
+
+\bibitem[\protect\citeauthoryear{Ko, Choi, and Kim}{Ko {\em
+  et~al.}}{2008}]{ko08}
+Ko, S.-i., Choi, J.-s., and Kim, B.-h. (2008).
+\newblock Indoor Mobile Localization System and Stabilization of Localization
+  Performance using Pre-filtering.
+\newblock Volume~6,  204--213.
+
+\bibitem[\protect\citeauthoryear{Lazebnik, Schmid, and Jean}{Lazebnik {\em
+  et~al.}}{2006}]{lazebnik06}
+Lazebnik, S., Schmid, C., and Jean, P. (2006).
+\newblock Beyond bags of features: Spatial pyramid matching for recognizing
+  natural scene categories.
+\newblock In {\em Computer Vision Pattern and Recongition},  2169--2178.
+
+\bibitem[\protect\citeauthoryear{Leung, Clark, and Huissoon}{Leung {\em
+  et~al.}}{2008}]{leung08}
+Leung, K. Y.~K., Clark, C.~M., and Huissoon, J.~P. (2008).
+\newblock Localization in urban environments by matching ground level video
+  images with an aerial image.
+\newblock In {\em International Conference on Robotics and Automation}, ICRA,
+  551--556.
+
+\bibitem[\protect\citeauthoryear{Li, Snavely, and Huttenlocher}{Li {\em
+  et~al.}}{2010}]{li10}
+Li, Y., Snavely, N., and Huttenlocher, D.~P. (2010).
+\newblock Location recognition using prioritized feature matching.
+\newblock In {\em Proceedings of the 11th European conference on Computer
+  vision: Part II}, ECCV'10, Berlin, Heidelberg,  791--804. Springer-Verlag.
+
+\bibitem[\protect\citeauthoryear{LoadstoneGPS}{LoadstoneGPS}{2010}]{loadstone}
+LoadstoneGPS (2010).
+\newblock LOADSTONE GPS - free GPS software for your mobile phone.
+
+\bibitem[\protect\citeauthoryear{Lopes, Haghighat, Mandal, Givargis, and
+  Baldi}{Lopes {\em et~al.}}{2006}]{lopes06}
+Lopes, C.~V., Haghighat, A., Mandal, A., Givargis, T., and Baldi, P. (2006).
+\newblock Localization of Off-the-Shelf Mobile Devices Using Audible Sound:
+  Architectures, Protocols and Performance Assessment.
+\newblock In {\em ACM SIGMOBILE Mobile Computing and Communication Review},
+  Volume~10,  38--50.
+
+\bibitem[\protect\citeauthoryear{Lowe.}{Lowe.}{2004}]{lowe04}
+Lowe., D. (2004).
+\newblock Distinctive Image features from scale invariant keypoints.
+\newblock {\em International Journal of Computer Vision\/},~{\em 60}, 91--110.
+
+\bibitem[\protect\citeauthoryear{Meers and Ward}{Meers and
+  Ward}{2005}]{meers05}
+Meers, S. and Ward, K. (2005).
+\newblock A Substitute Vision System for Providing 3D Perception and GPS
+  Navigation via Electro-Tactile Stimulation.
+\newblock In {\em Proc. International Conference on Sensing Technology}.
+
+\bibitem[\protect\citeauthoryear{Mulloni, Wagner, Barakonyi, and
+  Schmalstieg}{Mulloni {\em et~al.}}{2009}]{mulloni09}
+Mulloni, A., Wagner, D., Barakonyi, I., and Schmalstieg, D. (2009).
+\newblock Indoor Positioning and Navigation with Camera Phones.
+\newblock {\em IEEE Pervasive Computing\/},~{\em 8\/}(2), 22--31.
+
+\bibitem[\protect\citeauthoryear{Ni, Liu, Lau, and Patil}{Ni {\em
+  et~al.}}{2004}]{ni04}
+Ni, L.~M., Liu, Y., Lau, Y.~C., and Patil, A.~P. (2004).
+\newblock LANDMARC: indoor location sensing using active RFID.
+\newblock {\em Wireless Networks\/},~{\em 10\/}(6), 701--710.
+
+\bibitem[\protect\citeauthoryear{Nister and Stewenius}{Nister and
+  Stewenius}{2006}]{nister06}
+Nister, D. and Stewenius, H. (2006).
+\newblock Scalable recognition with a vocabulary tree.
+\newblock In {\em Proc. Computer Vision and Pattern Recognition}, Volume~2,
+  2161--2168.
+
+\bibitem[\protect\citeauthoryear{Pace}{Pace}{1995}]{pace95}
+Pace, S. (1995).
+\newblock {\em The global positioning system: Assessing national policies}.
+\newblock Santa Monica, CA: RAND.
+
+\bibitem[\protect\citeauthoryear{Philbin, Isard, Sivic, and Zisserman}{Philbin
+  {\em et~al.}}{2007}]{philbin07}
+Philbin, J., Isard, M., Sivic, J., and Zisserman, A. (2007).
+\newblock Object Retrieval with Large Vocabularies and Fast Spatial Matching.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern Recognition}.
+
+\bibitem[\protect\citeauthoryear{Philbin, Isard, Sivic, and Zisserman}{Philbin
+  {\em et~al.}}{2008}]{philbin08}
+Philbin, J., Isard, M., Sivic, J., and Zisserman, A. (2008).
+\newblock Lost in quantization: Improving particular object retrieval in large
+  scale image databases.
+\newblock In {\em Computer Vision and Pattern Recognition}.
+
+\bibitem[\protect\citeauthoryear{Povidi}{Povidi}{2008}]{povidi}
+Povidi (2008).
+\newblock Soundpost A revolution in blindness orientation.
+
+\bibitem[\protect\citeauthoryear{Priyantha}{Priyantha}{2005}]{priyantha05}
+Priyantha, N.~B. (2005).
+\newblock The Cricket Indoor Location System.
+\newblock In {\em PhD Thesis, MIT}.
+
+\bibitem[\protect\citeauthoryear{Priyantha, Chakraborty, and
+  Balakrishnan}{Priyantha {\em et~al.}}{2000}]{priyantha00}
+Priyantha, N.~B., Chakraborty, A., and Balakrishnan, H. (2000).
+\newblock The Cricket location-support system.
+\newblock In {\em Proceedings of the 6th annual international conference on
+  Mobile computing and networking}, MobiCom '00,  32--43.
+
+\bibitem[\protect\citeauthoryear{Ran, Helal, and Moore}{Ran {\em
+  et~al.}}{2004}]{ran04}
+Ran, L., Helal, S., and Moore, S. (2004).
+\newblock {Drishti: an integrated indoor/outdoor blind navigation system and
+  service}.
+\newblock  23--30.
+
+\bibitem[\protect\citeauthoryear{Ranganathan}{Ranganathan}{2012}]{ranga10}
+Ranganathan, A. (2012).
+\newblock PLISS: Detecting and Labeling Places Using Online Change-Point
+  Detection.
+\newblock In {\em Proceedings of Robotics: Science and Systems},  1--8.
+
+\bibitem[\protect\citeauthoryear{RNZFB}{RNZFB}{2012}]{rnzfb}
+RNZFB (2012).
+\newblock Royal New Zealand Foundation of the Blind, New Zealand.
+
+\bibitem[\protect\citeauthoryear{Robertson and Cipolla}{Robertson and
+  Cipolla}{2004}]{duncan04}
+Robertson, D. and Cipolla, R. (2004).
+\newblock An image-based system for urban navigation.
+\newblock In {\em Proceedings British Machine Vision Conference},  819--828.
+
+\bibitem[\protect\citeauthoryear{Ruf, Kokiopoulou, and Detyniecki}{Ruf {\em
+  et~al.}}{2010}]{ruf08}
+Ruf, B., Kokiopoulou, E., and Detyniecki, M. (2010).
+\newblock Mobile museum guide based on fast SIFT recognition.
+\newblock In {\em International conference on Adaptive Multimedia Retrieval:
+  identifying, Summarizing, and Recommending Image and Music},  170--183.
+
+\bibitem[\protect\citeauthoryear{Saeedi, Lawrence, and Lowe}{Saeedi {\em
+  et~al.}}{2006}]{saeedi06}
+Saeedi, P., Lawrence, P.~D., and Lowe, D. (2006).
+\newblock Vision-based 3-D trajectory tracking for unknown environments.
+\newblock {\em Transactions of Robotics\/},~{\em 22\/}(1), 119--136.
+
+\bibitem[\protect\citeauthoryear{Sattler, Leibe, and Kobbelt}{Sattler {\em
+  et~al.}}{2011}]{torsten11}
+Sattler, T., Leibe, B., and Kobbelt, L. (2011).
+\newblock Fast image-based localization using direct 2D-to-3D matching.
+\newblock In {\em ICCV},  667--674.
+
+\bibitem[\protect\citeauthoryear{Se, Lowe, and Little}{Se {\em
+  et~al.}}{2001}]{se01}
+Se, S., Lowe, D., and Little, J. (2001).
+\newblock Vision-based Mobile Robot Localization And Mapping using
+  Scale-Invariant Features.
+\newblock In {\em In Proceedings of the IEEE International Conference on
+  Robotics and Automation (ICRA},  2051--2058.
+
+\bibitem[\protect\citeauthoryear{Se, Lowe, and Little}{Se {\em
+  et~al.}}{2005}]{se05}
+Se, S., Lowe, D., and Little, J. (2005).
+\newblock Vision-based global localization and mapping for mobile robots.
+\newblock Volume~21,  364--375.
+
+\bibitem[\protect\citeauthoryear{SenderoGroup}{SenderoGroup}{2012}]{miniguide}
+SenderoGroup (2012).
+\newblock Miniguide.
+
+\bibitem[\protect\citeauthoryear{Silveira, Malis, and Rives}{Silveira {\em
+  et~al.}}{2008}]{silveira08}
+Silveira, G., Malis, E., and Rives, P. (2008).
+\newblock An Efficient Direct Approach to Visual SLAM.
+\newblock {\em IEEE Transactions on Robotics\/},~{\em 24\/}(5), 969--979.
+
+\bibitem[\protect\citeauthoryear{Sim and Little}{Sim and Little}{2006}]{sim06}
+Sim, R. and Little, J.~J. (2006).
+\newblock Autonomous vision-based exploration and mapping using hybrid maps and
+  Rao-Blackwellised particle filters.
+\newblock In {\em IROS},  2082--2089. IEEE.
+
+\bibitem[\protect\citeauthoryear{Sivic and Zisserman}{Sivic and
+  Zisserman}{2003}]{sivic03}
+Sivic, J. and Zisserman, A. (2003).
+\newblock Video google: A text retrieval approach to object matching in videos.
+\newblock In {\em Proc. International Conference on Computer Vision.},
+  1470--1477.
+
+\bibitem[\protect\citeauthoryear{Skrypnyk and Lowe}{Skrypnyk and
+  Lowe}{2004}]{sky04}
+Skrypnyk, I. and Lowe, D.~G. (2004).
+\newblock Scene Modelling, Recognition and Tracking with Invariant Image
+  Features.
+\newblock In {\em Proceedings of the 3rd IEEE/ACM International Symposium on
+  Mixed and Augmented Reality}, ISMAR '04,  110--119.
+
+\bibitem[\protect\citeauthoryear{Song, Jiang, and Huang}{Song {\em
+  et~al.}}{2011}]{indoorsurvey11}
+Song, Z., Jiang, G., and Huang, C. (2011).
+\newblock A Survey on Indoor Positioning Technologies.
+\newblock In {\em Second International Conference on Theoretical and
+  Mathematical Foundations of Computer Science}, Volume 164,  98--106.
+
+\bibitem[\protect\citeauthoryear{Strong}{Strong}{}]{cane1}
+Strong, P.
+\newblock The History of the White Cane.
+
+\bibitem[\protect\citeauthoryear{System}{System}{2008}]{abs08}
+System, A.~B. (2008).
+\newblock Active Badge System, Website.
+
+\bibitem[\protect\citeauthoryear{Talukder and Matthies}{Talukder and
+  Matthies}{2004}]{talukder04}
+Talukder, A. and Matthies, L. (2004).
+\newblock Real-time detection of moving objects from moving vehicle using dense
+  stereo and optical flow.
+\newblock In {\em Conference on Intelligent Robots and Systems}. IEEE.
+
+\bibitem[\protect\citeauthoryear{Thrun, Bennewitz, Burgard, Cremers, Dellaert,
+  Fox, Haehnel, Rosenberg, Roy, Schulte, and Schulz}{Thrun {\em
+  et~al.}}{1999}]{thrun99}
+Thrun, S., Bennewitz, M., Burgard, W., Cremers, A., Dellaert, F., Fox, D.,
+  Haehnel, D., Rosenberg, C., Roy, N., Schulte, J., and Schulz, D. (1999).
+\newblock MINERVA: A second generation mobile tour-guide robot.
+\newblock In {\em Proc. of the IEEE International Conference on Robotics and
+  Automation (ICRA'99)}.
+
+\bibitem[\protect\citeauthoryear{Trucco and Plakas}{Trucco and
+  Plakas}{2006}]{trucco06}
+Trucco, E. and Plakas, K. (2006).
+\newblock Video tracking: A concise survey.
+\newblock Volume~31,  520--529.
+
+\bibitem[\protect\citeauthoryear{Viola and Jones}{Viola and
+  Jones}{2001}]{viola01}
+Viola, P. and Jones, M. (2001).
+\newblock Rapid object detection using a boosted cascade of simple features.
+\newblock In {\em Computer Vision and Pattern Recognition},  511--518.
+
+\bibitem[\protect\citeauthoryear{Want, Hopper, Falc\~{a}o, and Gibbons}{Want
+  {\em et~al.}}{1992a}]{roy92}
+Want, R., Hopper, A., Falc\~{a}o, V., and Gibbons, J. (1992a).
+\newblock The active badge location system.
+\newblock {\em ACM Transactions Information Systems\/},~{\em 10\/}(1), 91--102.
+
+\bibitem[\protect\citeauthoryear{Want, Hopper, Falc\~{a}o, and Gibbons}{Want
+  {\em et~al.}}{1992b}]{want92}
+Want, R., Hopper, A., Falc\~{a}o, V., and Gibbons, J. (1992b).
+\newblock The active badge location system.
+\newblock {\em ACM Trans. Inf. Syst.\/},~{\em 10\/}(1), 91--102.
+
+\bibitem[\protect\citeauthoryear{Ward, Jones, and Hopper}{Ward {\em
+  et~al.}}{2004}]{ultrasound04}
+Ward, A., Jones, A., and Hopper, A. (2004).
+\newblock New Location Technique for the Active Office.
+\newblock In {\em IEEEPersonal Communications}, Volume~4,  98--106.
+
+\bibitem[\protect\citeauthoryear{Wbesite}{Wbesite}{2008}]{wherenet08}
+Wbesite, W. (2008).
+\newblock WhereNet.
+
+\bibitem[\protect\citeauthoryear{Webmaster}{Webmaster}{2012a}]{dog3}
+Webmaster (2012a).
+\newblock MAKING A DIFFERENCE.
+
+\bibitem[\protect\citeauthoryear{Webmaster}{Webmaster}{2012b}]{dog2}
+Webmaster (2012b).
+\newblock Royal Foundation of blind New Zealand.
+
+\bibitem[\protect\citeauthoryear{Website}{Website}{2008}]{sonitor08}
+Website, S.~S. (2008).
+\newblock Sonitor Systems.
+
+\bibitem[\protect\citeauthoryear{WHO}{WHO}{2012}]{who12}
+WHO (2012).
+\newblock Visual impairment and blindness.
+\newblock Technical report.
+
+\bibitem[\protect\citeauthoryear{Wikiepdia}{Wikiepdia}{2012a}]{dog1}
+Wikiepdia (2012a).
+\newblock Guide Dog.
+
+\bibitem[\protect\citeauthoryear{Wikiepdia}{Wikiepdia}{2012b}]{cane2}
+Wikiepdia (2012b).
+\newblock White Cane.
+
+\bibitem[\protect\citeauthoryear{Wikipedia}{Wikipedia}{2012}]{braille12}
+Wikipedia (2012).
+\newblock Refreshable braille display.
+
+\bibitem[\protect\citeauthoryear{Winters and Santos-Victor}{Winters and
+  Santos-Victor}{1999}]{winters99}
+Winters, N. and Santos-Victor, J. (1999).
+\newblock Omni-directional Visual Navigation.
+\newblock In {\em In Proceedings of the 7th International Symposium on
+  Intelligent Robotics Systems},  109--118.
+
+\bibitem[\protect\citeauthoryear{Zhang and Kosecka}{Zhang and
+  Kosecka}{2006}]{zhang06}
+Zhang, W. and Kosecka, J. (2006).
+\newblock Image Based Localization in Urban Environments.
+\newblock In {\em Proceedings of the Third International Symposium on 3D Data
+  Processing, Visualization, and Transmission (3DPVT'06)}, 3DPVT '06,  33--40.
+
+\bibitem[\protect\citeauthoryear{Zhou, Wei, and Tan}{Zhou {\em
+  et~al.}}{2003}]{zhou03}
+Zhou, C., Wei, Y., and Tan, T. (2003).
+\newblock Mobile Robot Self-Localization Based on Global Visual Appearance
+  Features.
+\newblock In {\em Proceedings of the 2003 IEEE Int. Conf. on Robotics and
+  Automation, ICRA 2003, September 14-19, 2003},  1271--1276.
+
+\end{thebibliography}
